@@ -1,0 +1,160 @@
+-- MySQL Script
+-- Schema tracking_food1
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema tracking_food1
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `tracking_food` DEFAULT CHARACTER SET utf8 ;
+USE `tracking_food` ;
+
+-- -----------------------------------------------------
+-- Table `tracking_food`.`product_category`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `tracking_food`.`product_category` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `tracking_food`.`product`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `tracking_food`.`product` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `category_id` INT(11) NOT NULL,
+  `name` VARCHAR(85) NOT NULL,
+  `energy_value` DECIMAL(5,2) NOT NULL,
+  `proteins` DECIMAL(5,2) NOT NULL,
+  `carbohydrates` DECIMAL(5,2) NOT NULL,
+  `fats` DECIMAL(5,2) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `name_UNIQUE` (`name` ASC),
+  INDEX `categoria_id_idx` (`category_id` ASC),
+  CONSTRAINT `categoria_id`
+    FOREIGN KEY (`category_id`)
+    REFERENCES `tracking_food`.`product_category` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `tracking_food`.`user_contact`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `tracking_food`.`user_contact` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(85) NOT NULL,
+  `surname` VARCHAR(85) NULL DEFAULT NULL,
+  `login` VARCHAR(35) NOT NULL,
+  `password` VARCHAR(85) NOT NULL,
+  `mail_address` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `login_UNIQUE` (`login` ASC))
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `tracking_food`.`eaten_products`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `tracking_food`.`eaten_products` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `user_id` INT(11) NOT NULL,
+  `product_id` INT(11) NOT NULL,
+  `weight` INT(11) NOT NULL,
+  `energy_value` DECIMAL(5,2) NOT NULL,
+  `proteins` DECIMAL(5,2) NOT NULL,
+  `carbohydrates` DECIMAL(5,2) NOT NULL,
+  `fats` DECIMAL(5,2) NOT NULL,
+  `date` DATE NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `user_id_idx` (`user_id` ASC),
+  INDEX `product_id_idx` (`product_id` ASC),
+  CONSTRAINT `product_id`
+    FOREIGN KEY (`product_id`)
+    REFERENCES `tracking_food`.`product` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `user_id`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `tracking_food`.`user_contact` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `tracking_food`.`life_style`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `tracking_food`.`life_style` (
+  `id` INT(11) NOT NULL,
+  `life_style` VARCHAR(45) NOT NULL,
+  `index` DECIMAL(5,3) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `tracking_food`.`user_param`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `tracking_food`.`user_param` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `user_id` INT(11) NOT NULL,
+  `sex` VARCHAR(8) NOT NULL,
+  `lifestyle_id` INT(11) NOT NULL,
+  `age` INT(11) NOT NULL,
+  `height` DECIMAL(5,2) NOT NULL,
+  `weight` DECIMAL(6,3) NOT NULL,
+  `expected_result` VARCHAR(45) NULL DEFAULT 'схуднення',
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `user_id_UNIQUE` (`user_id` ASC),
+  INDEX `user_id_fk_idx` (`user_id` ASC),
+  INDEX `life_style_id_idx` (`lifestyle_id` ASC),
+  CONSTRAINT `life_style_id`
+    FOREIGN KEY (`lifestyle_id`)
+    REFERENCES `tracking_food`.`life_style` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `user_id_fk`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `tracking_food`.`user_contact` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `tracking_food`.`user_result`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `tracking_food`.`user_result` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `user_id` INT(11) NOT NULL,
+  `level_metabolism` DECIMAL(6,2) NOT NULL,
+  `norm_calories` DECIMAL(6,2) NOT NULL,
+  `expected_norm_calories` DECIMAL(6,2) NOT NULL,
+  `proteins` DECIMAL(6,2) NOT NULL,
+  `carbohydrates` DECIMAL(6,2) NOT NULL,
+  `fats` DECIMAL(6,2) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `user_id_UNIQUE` (`user_id` ASC),
+  INDEX `user_id_res_idx` (`user_id` ASC),
+  CONSTRAINT `user_id_res`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `tracking_food`.`user_contact` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1
+DEFAULT CHARACTER SET = utf8;

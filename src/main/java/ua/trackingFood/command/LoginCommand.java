@@ -32,9 +32,11 @@ public class LoginCommand implements Command {
             request.getRequestDispatcher("/login.jsp").forward(request, response);
         }
 
-        if(loginService.checkLogin(login,password)){
-            session.setAttribute("login",login);
+        if(!loginService.checkLogin(login,password)){
+            request.setAttribute("errorMessageLogin", "Login or password incorrect");
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
         }
+        session.setAttribute("login",login);
         User user = loginService.getUserByLogin(login);
         session.setAttribute("userId",user.getId());
         List<CategoryProducts> categoryList = generalService.readCategory();
