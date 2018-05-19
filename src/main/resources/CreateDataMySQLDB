@@ -1,0 +1,21 @@
+insert into users (userId, position, name, login, password, check_word, salary, number_mistake, experience) values(1, 'ew', 'Maрія', 'best', 'qwerty', 'valera', 1700, 0, 8);
+insert into users (userId, position, name, login, password, check_word, salary, number_mistake, experience) values(2, 'cashier', 'sasha', 'ALEX', 'life', 'кошеня', 1900, 0, 12);
+
+
+insert into products (id, code_product, name, countable, price_for_one) values(1, 1001, "банани", "0", 33.55);
+insert into products (id, code_product, name, countable, price_for_one) values(2, 1002, "мандарини", "0", 28.35);
+insert into products (id, code_product, name, countable, price_for_one) values(3, 1003, "яблука", "0", 13.00);
+insert into products (id, code_product, name, countable, price_for_one) values(4, 1004, "сливи", "0", 67.50);
+insert into products (id, code_product, name, countable, price_for_one) values(5, 1005, "апельсини", "0", 31.20);
+insert into products (id, code_product, name, countable, price_for_one) values(6, 1006, "ківі", "0", 43.35);
+
+insert into current_check (id, product_id, user_id, count, result_price) values(2, 5, 1, 4.5, 25);
+insert into current_check (id, product_id, user_id, count, result_price) values(2, 3, 1, 7.5, 67);
+insert into current_check (id, product_id, user_id, count, result_price) values(2, 4, 2, 3.33, 13.66);
+
+
+insert into stock (id, product_id, number) values(1, 1, 200.300);
+insert into stock (id, product_id, number) values(2, 2, 300.500);
+insert into stock (id, product_id, number) values(3, 3, 200.900);
+insert into stock (id, product_id, number) values(4, 4, 179.200);
+insert into stock (id, product_id, number) values(5, 5, 254.230);

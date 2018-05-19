@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SimpleProject:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a7bdadb-d33a-45cb-8ae8-e4b98240c0fe" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SimpleProject2$All_in_SimpleProject.coverage" NAME="All in SimpleProject Coverage Results" MODIFIED="1516660128198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="productsList1.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList1.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1088">
+              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addProducts.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addProducts.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personalList.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personalList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="50" column="37" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoToChooseCategoryCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FactoryCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/FactoryCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1906#1907#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Servlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddEatenProductsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/EatenProducts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOEatenProducts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddAndShowEatenProductsService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationStep1.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/validation/EnterDataValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationStep2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationStep1Command.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationStep2Command.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUsersImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUsersParamImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUsersParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOLifeStyle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/LifeStyle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOLifeStyleImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationParamCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserResultImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserParamImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LogOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChangeParamCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/changeRegistrationParam.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddEatenProductsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ShowEatenProductsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LogOutCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationParam.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GeneralCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/FactoryCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseCategoryCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList1.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/general.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/GeneralService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToGeneralCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personalList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addProducts.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/Main.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="818" />
+    <option name="y" value="13" />
+    <option name="width" value="779" />
+    <option name="height" value="855" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+              <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="H2&#10;MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.33188406" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ua.trackingFood.dao.Impl" />
+      <recent name="ua.simpleproject.exception" />
+      <recent name="ua.simpleproject.command" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\1\SimpleProject2\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\IdeaProjects\1\SimpleProject2\src\main\webapp\WEB-INF" />
+      <recent name="D:\IdeaProjects\1\SimpleProject2\src\main\java\ua\" />
+      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src\main\webapp\jsp" />
+      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src\main\java\ua\simpleproject" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ua.trackingFood.command" />
+      <recent name="ua.trackingFood.service" />
+      <recent name="ua.trackingFood.dao.Impl" />
+      <recent name="ua.trackingFood.dao" />
+      <recent name="ua.trackingFood.servlet" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src\main\resources" />
+      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src\test\ua\simpleproject" />
+      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src" />
+      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src\main\java\ua\simpleproject\filters" />
+      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src\main\java\ua\simpleproject\configaration" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.SimpleProject2">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.simpleproject.MainClass" />
+      <module name="SimpleProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.simpleproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="All in SimpleProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SimpleProject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="UsersJdbcDAOTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SimpleProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.simpleproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.simpleproject" />
+      <option name="MAIN_CLASS_NAME" value="ua.simpleproject.UsersJdbcDAOTest" />
+      <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="SimpleProject2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.2" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SimpleProject:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SimpleProject2_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54988" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SimpleProject:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.SimpleProject2" />
+      <item itemvalue="Application.MainClass" />
+      <item itemvalue="JUnit.All in SimpleProject" />
+      <item itemvalue="JUnit.UsersJdbcDAOTest.addUser" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in SimpleProject" />
+        <item itemvalue="JUnit.UsersJdbcDAOTest.addUser" />
+        <item itemvalue="Application.MainClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a7bdadb-d33a-45cb-8ae8-e4b98240c0fe" name="Default" comment="" />
+      <created>1514545242795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1514545242795</updated>
+      <workItem from="1514545251171" duration="4442000" />
+      <workItem from="1515001882525" duration="9807000" />
+      <workItem from="1515336529455" duration="85171000" />
+      <workItem from="1515854134738" duration="34293000" />
+      <workItem from="1515936520534" duration="27796000" />
+      <workItem from="1516024057606" duration="11331000" />
+      <workItem from="1516038863362" duration="49808000" />
+      <workItem from="1516186280398" duration="33334000" />
+      <workItem from="1516277571935" duration="25253000" />
+      <workItem from="1516321285620" duration="29042000" />
+      <workItem from="1516378014917" duration="81556000" />
+      <workItem from="1516626804837" duration="38242000" />
+      <workItem from="1516712666941" duration="10000000" />
+      <workItem from="1516724728728" duration="4000" />
+      <workItem from="1516727600484" duration="18287000" />
+      <workItem from="1525177403524" duration="373000" />
+      <workItem from="1525937267521" duration="1062000" />
+      <workItem from="1525949300816" duration="639000" />
+      <workItem from="1525954609364" duration="18900000" />
+      <workItem from="1526027603091" duration="7916000" />
+      <workItem from="1526044426814" duration="66130000" />
+      <workItem from="1526208334046" duration="86415000" />
+      <workItem from="1526408854942" duration="67129000" />
+      <workItem from="1526680654876" duration="6842000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_SimpleProject - 2018.01.23 at 00h 46m 18s.xml">
+      <configuration name="All in SimpleProject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SimpleProject - 2018.01.23 at 00h 54m 29s.xml">
+      <configuration name="All in SimpleProject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SimpleProject - 2018.01.23 at 00h 56m 44s.xml">
+      <configuration name="All in SimpleProject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SimpleProject - 2018.01.23 at 00h 57m 26s.xml">
+      <configuration name="All in SimpleProject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SimpleProject - 2018.01.23 at 00h 59m 05s.xml">
+      <configuration name="All in SimpleProject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SimpleProject - 2018.01.23 at 01h 00m 48s.xml">
+      <configuration name="All in SimpleProject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SimpleProject - 2018.01.23 at 02h 19m 45s.xml">
+      <configuration name="All in SimpleProject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SimpleProject - 2018.01.23 at 02h 20m 46s.xml">
+      <configuration name="All in SimpleProject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersJdbcDAOTest_addUser - 2018.01.23 at 00h 46m 01s.xml">
+      <configuration name="UsersJdbcDAOTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersJdbcDAOTest_addUser - 2018.01.23 at 00h 46m 03s.xml">
+      <configuration name="UsersJdbcDAOTest.addUser" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="713772000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="0" weight="0.3294271" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.24479167" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.2643229" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.40234375" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.258125" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.33333334" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/simpleproject/services/AddProductLogic.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/simpleproject/MainClass.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/simpleproject/comand/OutXCommand.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/simpleproject/comand/AddProductCommand.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/simpleproject/services/AddProductLogic.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/ua/simpleproject/UsersJdbcDAOTest.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/simpleproject/comand/CreateProductCommand.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/simpleproject/comand/AddProductStockCommand.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/simpleproject/comand/LoginCommand.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java</url>
+          <line>17</line>
+          <properties field="generalService" class="ua.trackingFood.command.GoToChooseCategoryCommand" />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="82" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/simpleproject/dao/Impl/DAOCurrentCheckImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOProductImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/validation/EnterDataValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="method#isValidLifeStyle#0;class#EnterDataValidator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUsersImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="66" column="57" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserResult.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOLifeStyle.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOLifeStyleImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/LifeStyle.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="886" column="37" lean-forward="true" selection-start-line="886" selection-start-column="37" selection-end-line="886" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserResultImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#2074#2075#0" expanded="true" />
+            <element signature="e#2117#2118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserParam.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/simpleproject/comand/LogOutCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserParamImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/EatenProducts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LogOutCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationParamCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/EmptyCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChangeParamCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationParam.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/changeRegistrationParam.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="38" column="52" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddEatenProductsService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/GeneralService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ShowEatenProductsService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/general.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToGeneralCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GeneralCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseCategoryCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personalList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addProducts.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/FactoryCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1906#1907#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>SimpleProject:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33188406" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33188406" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33188406" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33188406" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SimpleProject</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.h2database:h2:1.4.196</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33188406" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

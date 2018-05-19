@@ -1,0 +1,1 @@
+#INFO Thu Jan 11 18:37:58 EET 2018 - ServletPath :/favicon.ico, URL =http://localhost:8080/favicon.ico
