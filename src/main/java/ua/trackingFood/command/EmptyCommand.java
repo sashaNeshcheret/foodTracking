@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.logging.Logger;
 
+import static ua.trackingFood.utils.resourceHolders.PagesHolder.LOGIN_PAGE;
+
 public class EmptyCommand implements Command {
     private static final Logger logger = Logger.getLogger("EmptyCommand.class");
 
@@ -14,6 +16,6 @@ public class EmptyCommand implements Command {
         /* в случае ошибки или прямого обращения к контроллеру
          * переадресация на страницу ввода логина */
         logger.info("Empty Command has been called");
-        request.getRequestDispatcher("/login.jsp").forward(request, response);
+        request.getRequestDispatcher(LOGIN_PAGE).forward(request, response);
     }
 }

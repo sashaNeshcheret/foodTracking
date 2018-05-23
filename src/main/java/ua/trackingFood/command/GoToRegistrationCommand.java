@@ -6,11 +6,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.logging.Logger;
 
+import static ua.trackingFood.utils.resourceHolders.PagesHolder.REGISTRATION_PAGE;
+
 public class GoToRegistrationCommand implements Command {
     private Logger logger = Logger.getLogger("GoToRegistrationCommand.class");
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/jsp/registration.jsp").forward(request, response);
+        request.getRequestDispatcher(REGISTRATION_PAGE).forward(request, response);
     }
 }

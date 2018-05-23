@@ -9,12 +9,13 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
+
+import static ua.trackingFood.utils.resourceHolders.AttributesHolder.COMMAND;
 
 public class Servlet extends HttpServlet{
     private ServletConfig config;
@@ -44,8 +45,7 @@ public class Servlet extends HttpServlet{
         processRequest(req, resp);
     }
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        String commandStr = request.getParameter("command");
+        String commandStr = request.getParameter(COMMAND);
         FactoryCommand factoryCommand = FactoryCommand.getInstance();
         Command command = factoryCommand.getCommand(commandStr);
         command.execute(request, response);

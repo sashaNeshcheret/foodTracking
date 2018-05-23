@@ -1,12 +1,15 @@
 package ua.trackingFood.command;
 
+import ua.trackingFood.entity.CategoryProducts;
 import ua.trackingFood.entity.EatenProducts;
 import ua.trackingFood.entity.Product;
 import ua.trackingFood.entity.UserResult;
+import ua.trackingFood.exception.DAOException;
 import ua.trackingFood.service.AddEatenProductsService;
 import ua.trackingFood.service.GeneralService;
 import ua.trackingFood.service.LoginService;
 import ua.trackingFood.service.ShowEatenProductsService;
+import ua.trackingFood.validation.EnterDataValidator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -16,70 +19,82 @@ import java.math.BigDecimal;
 import java.util.*;
 import java.util.logging.Logger;
 
+import static ua.trackingFood.utils.resourceHolders.AttributesHolder.*;
+import static ua.trackingFood.utils.resourceHolders.MessagesHolder.NUM_PER_PAGE;
+import static ua.trackingFood.utils.resourceHolders.PagesHolder.PERSONAL_LIST_PAGE;
+import static ua.trackingFood.utils.resourceHolders.PagesHolder.PRODUCTS_LIST_PAGE;
+
 public class AddAndShowEatenProductsCommand implements Command{
     private GeneralService generalService = new GeneralService();
     private AddEatenProductsService addEatenProductsService = new AddEatenProductsService();
     private ShowEatenProductsService showEatenProductsService = new ShowEatenProductsService();
-    private Logger logger = Logger.getLogger("LoginCommand.class");
+    private Logger logger = Logger.getLogger("AddAndShowEatenProductsCommand.class");
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Map<String, BigDecimal> map = new HashMap<>();
-        int userId = (int)request.getSession().getAttribute("userId");
-        String categoryId = request.getParameter("categoryId");
-
-        String nameSubmit1 = request.getParameter("previous category"); //name1 = "previous category"
-        String nameSubmit2 = request.getParameter("next category"); //name2 = "next category"
-        String nameSubmit3 = request.getParameter("Add All Products"); //name3 = "Add All Products"
-
-
-        String[] arrayId = request.getParameterValues("id");
-        String[] arrayNumber = request.getParameterValues("number");
+        int userId = (int)request.getSession().getAttribute(ATTR_USER_ID);
+        String categoryId = request.getParameter(ATTR_CATEGORY_ID);
+        String nameSubmit1 = request.getParameter(ATTR_PREVIOUS);
+        String nameSubmit2 = request.getParameter(ATTR_NEXT);
+        String nameSubmit3 = request.getParameter(ATTR_PREVIOUS_PROD);
+        String nameSubmit4 = request.getParameter(ATTR_NEXT_PROD);
+        String nameSubmit5 = request.getParameter(ATTR_ADD);
+        String[] arrayId = request.getParameterValues(ATTR_ID);
+        String[] arrayNumber = request.getParameterValues(ATTR_NUMBER);
+        String pageNumberStr = request.getParameter(ATTR_PAGE_NUM);
+//TODO add checking categoryId and pageNumberStr
+int from = Integer.parseInt(pageNumberStr);
+int category = Integer.parseInt(categoryId);
         try{
             map = createMap(arrayId, arrayNumber);
         }catch(NumberFormatException e){
             request.setAttribute("errorMessage", "enter data is not correct, please try again");
-            List<Product> productsList = generalService.getProductsList(Integer.parseInt(categoryId));
+            List<Product> productsList = generalService.getProductsList(Integer.parseInt(categoryId), from, NUM_PER_PAGE);
             request.setAttribute("categoryId", categoryId);
             request.setAttribute("productsList", productsList);
-            request.getRequestDispatcher("/WEB-INF/jsp/productsList.jsp").forward(request,response);
+            request.getRequestDispatcher(PRODUCTS_LIST_PAGE).forward(request,response);
         }
+/*
+        if(!verify(request, categoryId)){
+            List<CategoryProducts> categoryList = generalService.readCategories();
+            request.setAttribute("message", "Internal mistake was happen");
+            request.setAttribute("list", categoryList);
+            request.getRequestDispatcher("/WEB-INF/jsp/CHOOSE_CATEGORY.jsp").forward(request,response);
+        }
+*/
 //map.forEach((k,v)->(k + v));
         EatenProducts eatenProducts = null;
         for (Map.Entry<String, BigDecimal> entry : map.entrySet()) {
             Product product = showEatenProductsService.getProduct(Integer.parseInt(entry.getKey()));
             addEatenProductsService.createEatenProducts(product, entry.getValue(), userId);
         }
-
         List<EatenProducts> eatenProductsList = showEatenProductsService.getEatenProductList(userId);
-
-        if(Objects.equals("Add All Products", nameSubmit3)){
+        if(Objects.equals(ATTR_ADD, nameSubmit5)){
             UserResult userResult = generalService.readUserResultInfo(userId);
             EatenProducts eatenProduct = showEatenProductsService.getResultEatenProduct(eatenProductsList);
             String message = generalService.consumptionAnalysis(eatenProduct, userResult);
-//String messageWarning = generalService.consumptionAnalysis(eatenProduct, userResult);
-//String messageError = generalService.consumptionAnalysis(eatenProduct, userResult);
             request.setAttribute("message", message);
-//request.setAttribute("messageWarning", messageWarning);
-//request.setAttribute("messageError", messageError);
+            request.setAttribute("eatenProduct", eatenProduct);
             request.setAttribute("eatenProductsList", eatenProductsList);
-            request.getRequestDispatcher("/WEB-INF/jsp/personalList.jsp").forward(request,response);
+            request.getRequestDispatcher(PERSONAL_LIST_PAGE).forward(request,response);
+            return;
         }
-        if(Objects.equals("previous category", nameSubmit1)){
-            int category = Integer.parseInt(categoryId);
-            List<Product> productsList = generalService.getProductsList(category-1);
-            request.setAttribute("categoryId", category-1);
-            request.setAttribute("productsList", productsList);
-            request.getRequestDispatcher("/WEB-INF/jsp/productsList1.jsp").forward(request,response);
+        try {
+            category = generalService.paginationCategory(category, nameSubmit1, nameSubmit2);
+            from = generalService.paginationProducts(from, nameSubmit3, nameSubmit4);
+        } catch (DAOException e) {
+//todo log
         }
-        if(Objects.equals("next category", nameSubmit2)){
-            int category = Integer.parseInt(categoryId);
-            List<Product> productsList = generalService.getProductsList(category+1);
-            request.setAttribute("categoryId", category+1);
-            request.setAttribute("productsList", productsList);
-            request.getRequestDispatcher("/WEB-INF/jsp/productsList1.jsp").forward(request,response);
-        }
+        List<Product> productsList = generalService.getProductsList(category, from, NUM_PER_PAGE);
+        CategoryProducts categoryProducts = generalService.readCategory(category);
+        request.setAttribute(ATTR_PAGE_NUM, from);
+        request.setAttribute("categoryProducts", categoryProducts);
+        request.setAttribute("productsList", productsList);
+        request.getRequestDispatcher(PRODUCTS_LIST_PAGE).forward(request,response);
     }
+
+
 
     private Map<String, BigDecimal> createMap(String[] arrayId, String[] arrayNumberStr) throws NumberFormatException{
         Map<String, BigDecimal> map = new HashMap<>();
@@ -98,5 +113,16 @@ public class AddAndShowEatenProductsCommand implements Command{
             }
         }
         return map;
+    }
+    private boolean verify(HttpServletRequest request, String id){
+        if(Objects.isNull(id)) {
+            request.setAttribute("errorMessageLogin","You didn't enter category id");
+            return false;
+        }
+        if(!EnterDataValidator.isValidPositiveNumber(id)){
+            request.setAttribute("errorMessageLogin","id incorrect");
+            return false;
+        }
+        return true;
     }
 }

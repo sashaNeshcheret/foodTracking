@@ -18,12 +18,14 @@ public class DAOUserResultImpl implements DAOUserResult {
     private static  final String SQL_SELECT = "SELECT * FROM user_result where user_id = ?";
     private static  final String SQL_INSERT = "INSERT INTO user_result (user_id, level_metabolism, norm_calories, " +
             "expected_norm_calories, proteins, carbohydrates, fats) VALUES(?,?,?,?,?,?,?)";
+    private static  final String SQL_UPDATE = "UPDATE user_result SET level_metabolism = ?, norm_calories = ?," +
+            "expected_norm_calories = ?, proteins = ?, carbohydrates = ?, fats = ? where user_id = ?";
     private static  final String SQL_DELETE = "DELETE from user_param.users WHERE login = ?";
 
     protected DAOUserResultImpl(){
     }
 
-    /**Insert object user in database "User"
+    /**Insert object user in database "UserContact"
      *
      * @param user
      * @throws DAOException this is own exception that combines exceptions which
@@ -77,6 +79,28 @@ public class DAOUserResultImpl implements DAOUserResult {
         return userResult;
     }
 
+    /**Insert object user in database "user_result"
+     *
+     * @param user
+     * @throws DAOException this is own exception that combines exceptions which
+     * happened during work with database
+     */
+    public void update(UserResult user) throws DAOException {
+        try(ConnectionWrapper connection = TransactionManager.getConnection()) {
+            PreparedStatement preparedStatement = connection.preparedStatement(SQL_UPDATE);
+            preparedStatement.setBigDecimal(1, user.getLevelMetabolism());
+            preparedStatement.setBigDecimal(2, user.getNormaCalories());
+            preparedStatement.setBigDecimal(3, user.getExpectedNormCalories());
+            preparedStatement.setBigDecimal(4, user.getProteins());
+            preparedStatement.setBigDecimal(5, user.getCarbohydrates());
+            preparedStatement.setBigDecimal(6, user.getFats());
+            preparedStatement.setInt(7, user.getUserId());
+            preparedStatement.executeUpdate();
+        } catch (SQLException | ConnectionException e) {
+            logger.warning(String.format("Method update(UserResult " + user + ") has thrown an exception."));
+            throw new DAOException(String.format("Method update(UserResult " + user + ") has thrown an exception."), e);
+        }
+    }
     /**Delete user in DB by login
      *
      * @param userId

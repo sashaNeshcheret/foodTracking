@@ -1,6 +1,6 @@
 package ua.trackingFood.entity;
 
-public class User {
+public class UserContact {
     private int id;
     private String login;
     private String password;
@@ -9,10 +9,10 @@ public class User {
     private String mailAddress;
 
 
-    public User(){
+    public UserContact(){
     }
 
-    public User(String login, String password, String name, String surname, String mail_adress) {
+    public UserContact(String login, String password, String name, String surname, String mail_adress) {
         this.login = login;
         this.password = password;
         this.name = name;

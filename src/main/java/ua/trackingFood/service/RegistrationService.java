@@ -6,13 +6,14 @@ import ua.trackingFood.dao.DAOUsers;
 import ua.trackingFood.dao.DAOUserParam;
 import ua.trackingFood.dao.Impl.DAOFactory;
 import ua.trackingFood.entity.LifeStyle;
-import ua.trackingFood.entity.User;
+import ua.trackingFood.entity.UserContact;
 import ua.trackingFood.entity.UserParam;
 import ua.trackingFood.entity.UserResult;
 import ua.trackingFood.exception.DAOException;
 import ua.trackingFood.exception.RegistrationException;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 import java.util.logging.Logger;
 
 /**
@@ -27,19 +28,30 @@ public class RegistrationService {
 
 
 
-    public void register(User user) throws RegistrationException {
+    public void register(UserContact userContact) throws RegistrationException {
         try {
-            daoUsers.create(user);
+            daoUsers.create(userContact);
         } catch (DAOException e) {
             throw new RegistrationException(e);
         }
     }
-    public void registerStep2(UserParam userParam) throws RegistrationException {
+    public void registerStep2(UserParam userParam, UserContact userContact) throws RegistrationException {
+        if(Objects.isNull(userParam) || Objects.isNull(userContact)){
+            throw new RegistrationException("UserParam or UserContact is null");
+        }
         try {
-            LifeStyle lifeStyle = daoLifeStyle.read(userParam.getLifeStyleId());
-            UserResult userResult = createResults(userParam, lifeStyle);
-            daoUserParam.create(userParam);
-            daoUserResult.create(userResult);
+            UserParam userParamExists = daoUserParam.read(userContact.getId());
+            if(Objects.isNull(userParamExists)){
+                LifeStyle lifeStyle = daoLifeStyle.read(userParam.getLifeStyleId());
+                UserResult userResult = createResults(userParam, lifeStyle);
+                daoUserParam.create(userParam);
+                daoUserResult.create(userResult);
+            }else{
+                LifeStyle lifeStyle = daoLifeStyle.read(userParam.getLifeStyleId());
+                UserResult userResult = createResults(userParam, lifeStyle);
+                daoUserParam.update(userParam);
+                daoUserResult.update(userResult);
+            }
         } catch (DAOException e) {
             throw  new RegistrationException(e);
         }

@@ -13,6 +13,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.logging.Logger;
 
+import static ua.trackingFood.utils.resourceHolders.AttributesHolder.ATTR_LOGIN;
+import static ua.trackingFood.utils.resourceHolders.PagesHolder.GENERAL_PAGE;
+
 public class GoToGeneralCommand implements Command {
     private Logger logger = Logger.getLogger("GoToChangeParamCommand.class");
     private GeneralService generalService = new GeneralService();
@@ -23,12 +26,12 @@ public class GoToGeneralCommand implements Command {
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String login = (String) session.getAttribute("login");
-        User user = loginService.getUserByLogin(login);
-        List<CategoryProducts> categoryList = generalService.readCategory();
-        UserResult userResult = generalService.readUserResultInfo(user.getId());
-        UserParam userParam = generalService.readUserParamInfo(user.getId());
-        List<EatenProducts> eatenProductsList = showEatenProductsService.getEatenProductList(user.getId());
+        String login = (String) session.getAttribute(ATTR_LOGIN);
+        UserContact userContact = loginService.getUserByLogin(login);
+        List<CategoryProducts> categoryList = generalService.readCategories();
+        UserResult userResult = generalService.readUserResultInfo(userContact.getId());
+        UserParam userParam = generalService.readUserParamInfo(userContact.getId());
+        List<EatenProducts> eatenProductsList = showEatenProductsService.getEatenProductList(userContact.getId());
         EatenProducts eatenProduct = showEatenProductsService.getResultEatenProduct(eatenProductsList);
         EatenProducts availableBalance = generalService.availableBalance(userResult, eatenProduct);
 //String message = generalService.consumptionAnalysis(eatenProduct, userResult);
@@ -39,6 +42,6 @@ public class GoToGeneralCommand implements Command {
         request.setAttribute("eatenProduct", eatenProduct);
         request.setAttribute("availableBalance", availableBalance);
         request.setAttribute("list", categoryList);
-        request.getRequestDispatcher("/WEB-INF/jsp/general.jsp").forward(request,response);
+        request.getRequestDispatcher(GENERAL_PAGE).forward(request,response);
     }
 }

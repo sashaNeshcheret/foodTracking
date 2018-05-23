@@ -1,6 +1,6 @@
 package ua.trackingFood.command;
 
-import ua.trackingFood.entity.User;
+import ua.trackingFood.entity.UserContact;
 import ua.trackingFood.entity.UserParam;
 import ua.trackingFood.service.GeneralService;
 import ua.trackingFood.service.LoginService;
@@ -12,6 +12,9 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.logging.Logger;
 
+import static ua.trackingFood.utils.resourceHolders.AttributesHolder.ATTR_LOGIN;
+import static ua.trackingFood.utils.resourceHolders.PagesHolder.CHANGE_PARAM_PAGE;
+
 public class GoToChangeParamCommand implements Command {
     private Logger logger = Logger.getLogger("GoToChangeParamCommand.class");
     private GeneralService generalService = new GeneralService();
@@ -20,12 +23,12 @@ public class GoToChangeParamCommand implements Command {
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String login = (String) session.getAttribute("login");
+        String login = (String) session.getAttribute(ATTR_LOGIN);
 
-        User user = loginService.getUserByLogin(login);
-        UserParam userParam = generalService.readUserParamInfo(user.getId());
-        request.setAttribute("user", user);
+        UserContact userContact = loginService.getUserByLogin(login);
+        UserParam userParam = generalService.readUserParamInfo(userContact.getId());
+        request.setAttribute("userContact", userContact);
         request.setAttribute("userParam", userParam);
-        request.getRequestDispatcher("/WEB-INF/jsp/changeRegistrationParam.jsp").forward(request, response);
+        request.getRequestDispatcher(CHANGE_PARAM_PAGE).forward(request, response);
     }
 }

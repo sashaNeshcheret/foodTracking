@@ -3,7 +3,7 @@ package ua.trackingFood.service;
 
 import ua.trackingFood.dao.DAOUsers;
 import ua.trackingFood.dao.Impl.DAOFactory;
-import ua.trackingFood.entity.User;
+import ua.trackingFood.entity.UserContact;
 import ua.trackingFood.exception.DAOException;
 
 import java.util.logging.Logger;
@@ -23,13 +23,13 @@ public class LoginService {
      * @return
      */
     public boolean checkLogin(String enterLogin, String enterPass) {
-        User user = null;
+        UserContact userContact = null;
         try {
-            user = daoUsers.read(enterLogin);
-            if(enterPass == null || user == null){
+            userContact = daoUsers.read(enterLogin);
+            if(enterPass == null || userContact == null){
                 return false;
             }
-            if(enterLogin.equals(user.getLogin()) && enterPass.equals(user.getPassword())){
+            if(enterLogin.equals(userContact.getLogin()) && enterPass.equals(userContact.getPassword())){
                 return true;
             }
         } catch (DAOException e) {
@@ -43,14 +43,14 @@ public class LoginService {
      * @param login
      * @return
      */
-    public User getUserByLogin(String login){
-        User user = null;
+    public UserContact getUserByLogin(String login){
+        UserContact userContact = null;
         try {
-            user = DAOFactory.getDaoFactory().getDAOUsers().read(login);
-            return user;
+            userContact = DAOFactory.getDaoFactory().getDAOUsers().read(login);
+            return userContact;
         } catch (DAOException e) {
             // log4j
         }
-        return user;
+        return userContact;
     }
 }

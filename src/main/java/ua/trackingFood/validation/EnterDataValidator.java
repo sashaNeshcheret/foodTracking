@@ -19,12 +19,18 @@ public class EnterDataValidator {
 
     //name
     public static final String NAME_PATTERN = "([A-Za-z]+( )?[^ ])+|([^ ][А-Яа-яї'\" ]+[^ ])";
+    //public static final String EMAIL_PATTERN = "^[a-zA-Z0-9]{1}+((\\.|\\_-{0,1})[a-zA-Z0-9]{1})+@+([a-zA-Z0-9\\.])+";
+    public static final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" +
+            "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
 
     public static boolean isValidLogin(String word){
         return validTextField(word, LOGIN_PATTERN, 56);
     }
     public static boolean isValidPassword(String word) {
         return validTextField(word, PASSWORD_PATTERN, PASSWORD_LENGTH+1);
+    }
+    public static boolean isValidEmail(String word) {
+        return validTextField(word, EMAIL_PATTERN, 56);
     }
     public static boolean isValidSex(String word) {
         if(Objects.equals(word, "male") || Objects.equals(word, "female")) {
@@ -38,6 +44,9 @@ public class EnterDataValidator {
 
     public static boolean isValidExpectedResult(String word){
         int number = 0;
+        if(Objects.isNull(word)){
+            return false;
+        }
         try{
             number = Integer.parseInt(word);
         }catch (NumberFormatException e){
@@ -50,6 +59,9 @@ public class EnterDataValidator {
     }
     public static boolean isValidLifeStyle(String word){
         int number = 0;
+        if(Objects.isNull(word)){
+            return false;
+        }
         try{
             number = Integer.parseInt(word);
         }catch (NumberFormatException e){
@@ -63,6 +75,9 @@ public class EnterDataValidator {
 
     public static boolean isValidNumber(String numberStr){
         BigDecimal number;
+        if(Objects.isNull(numberStr)){
+            return false;
+        }
         try{
             number = new BigDecimal(numberStr);
         }catch (NumberFormatException e){
@@ -73,18 +88,26 @@ public class EnterDataValidator {
         }
         return true;
     }
-    public static boolean isEmpty(String ... param){
-        for(String checkWord : param){
-            if(checkWord.isEmpty() || checkWord == null){
-                return true;
-            }
+    public static boolean isValidPositiveNumber(String numberStr){
+        BigDecimal number;
+        if(Objects.isNull(numberStr)){
+            return false;
         }
-        return false;
+        try{
+            number = new BigDecimal(numberStr);
+        }catch (NumberFormatException e){
+            return false;
+        }
+        if(number.compareTo(new BigDecimal("0")) == -1){
+            return false;
+        }
+        return true;
     }
-    private static boolean validTextField(String word, String pattern, int length) {
+
+    private static boolean validTextField(String word, String patternStr, int length) {
         if(!Objects.equals(word, "") && !Objects.isNull(word) && word.length() <= length) {
-            Pattern patt = Pattern.compile(pattern);
-            Matcher matcher = patt.matcher(word);
+            Pattern pattern = Pattern.compile(patternStr);
+            Matcher matcher = pattern.matcher(word);
             if(matcher.matches()){
                 return true;
             }

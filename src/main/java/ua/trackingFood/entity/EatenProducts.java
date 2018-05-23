@@ -7,6 +7,7 @@ public class EatenProducts {
     private int id;
     private int userId;
     private int productId;
+    private String name;
     private BigDecimal weight;
     private BigDecimal energyValue;
     private BigDecimal proteins;
@@ -52,6 +53,14 @@ public class EatenProducts {
 
     public void setProductId(int productId) {
         this.productId = productId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public BigDecimal getWeight() {

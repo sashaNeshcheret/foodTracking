@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
 
-
 public class Servlet1 extends HttpServlet {
     private ServletConfig config;
 

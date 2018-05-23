@@ -19,11 +19,13 @@ import java.util.logging.Logger;
 public class DAOEatenProductsImpl implements DAOEatenProducts {
     private static final Logger logger = Logger.getLogger("DAOProductImpl.class");
 //private static  final String SQL_SELECT = "SELECT * FROM eaten_products where date = ? AND user_id = ?";
-    private static  final String SQL_SELECT = "SELECT * FROM eaten_products where user_id = ?";
+    //"SELECT * FROM eaten_products where user_id = ?";
+    private static  final String SQL_SELECT = "Select eaten_products.*, product.name from tracking_food.eaten_products " +
+        "left join tracking_food.product on eaten_products.product_id = product.id " +
+        "where eaten_products.user_id = ? AND eaten_products.date=?";
     private static  final String SQL_INSERT = "INSERT INTO eaten_products (user_id, product_id, weight, " +
             "energy_value, proteins, carbohydrates, fats, date) VALUES(?,?,?,?,?,?,?, NOW())";
     private static  final String SQL_UPDATE = "Update eaten_products SET weight=?, energy_value=?, proteins=?, carbohydrates=?, fats=? WHERE id= ?";
-    private static final String SQL_UPDATE_BY_ID = "UPDATE cash_register.current_check SET count = ?, result_price = ?  WHERE id = ?";
     private static  final String SQL_DELETE = "DELETE from eaten_products WHERE id = ?";
 
     protected DAOEatenProductsImpl(){
@@ -77,14 +79,15 @@ public class DAOEatenProductsImpl implements DAOEatenProducts {
      * happened during work with database
      */
     public List<EatenProducts> read(Date date, int id) throws DAOException {
-        LocalDate date1 = LocalDate.now();
+        LocalDate date1 = LocalDate.now().plusDays(1);
         Date dateSql = Date.valueOf(date1);
         List<EatenProducts> productList = new ArrayList<>();
         EatenProducts eatenProducts = null;
         try(ConnectionWrapper connection = TransactionManager.getConnection()) {
             PreparedStatement preparedStatement = connection.preparedStatement(SQL_SELECT);
-//preparedStatement.setDate(1, dateSql);
+
             preparedStatement.setInt(1, id);
+            preparedStatement.setDate(2, dateSql);
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()){
                 eatenProducts = new EatenProducts();
@@ -96,6 +99,8 @@ public class DAOEatenProductsImpl implements DAOEatenProducts {
                 eatenProducts.setProteins(resultSet.getBigDecimal(6));
                 eatenProducts.setCarbohydrates(resultSet.getBigDecimal(7));
                 eatenProducts.setFats(resultSet.getBigDecimal(8));
+                eatenProducts.setDate(resultSet.getDate(9));
+                eatenProducts.setName(resultSet.getString(10));
                 productList.add(eatenProducts);
             }
         } catch (SQLException | ConnectionException e){

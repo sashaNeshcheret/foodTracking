@@ -11,6 +11,9 @@ public class CategoryProducts {
         this.id = id;
         this.name = name;
     }
+    public CategoryProducts(String name) {
+        this.name = name;
+    }
 
     public int getId() {
         return id;

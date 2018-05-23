@@ -1,17 +1,14 @@
 package ua.trackingFood.service;
 
-import ua.trackingFood.dao.DAOCategoryProducts;
 import ua.trackingFood.dao.DAOEatenProducts;
 import ua.trackingFood.dao.DAOProduct;
 import ua.trackingFood.dao.Impl.DAOFactory;
-import ua.trackingFood.entity.CategoryProducts;
 import ua.trackingFood.entity.EatenProducts;
 import ua.trackingFood.entity.Product;
 import ua.trackingFood.exception.DAOException;
 
 import java.math.BigDecimal;
 import java.sql.Date;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -47,16 +44,24 @@ list = daoEatenProducts.read(new Date(2001), userId);
 //
         }
     }
+
     private EatenProducts countProductsParam(Product product, BigDecimal weightProduct, int userId) {
         EatenProducts eatenProducts = new EatenProducts();
         eatenProducts.setUserId(userId);
         eatenProducts.setProductId(product.getId());
         eatenProducts.setWeight(weightProduct);
         BigDecimal weight = weightProduct.divide(new BigDecimal(100));
-        eatenProducts.setEnergyValue(product.getEnergy_value().multiply(weight));
+        eatenProducts.setEnergyValue(product.getEnergyValue().multiply(weight));
         eatenProducts.setProteins(product.getProteins().multiply(weight));
         eatenProducts.setCarbohydrates(product.getCarbohydrates().multiply(weight));
         eatenProducts.setFats(product.getFats().multiply(weight));
         return eatenProducts;
+    }
+    public void deleteProduct(int productId){
+        try {
+            daoEatenProducts.delete(productId);
+        } catch (DAOException e) {
+//e.printStackTrace();
+        }
     }
 }

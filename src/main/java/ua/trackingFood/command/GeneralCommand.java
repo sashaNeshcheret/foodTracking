@@ -15,6 +15,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 
+import static ua.trackingFood.utils.resourceHolders.AttributesHolder.ATTR_LOGIN;
+import static ua.trackingFood.utils.resourceHolders.PagesHolder.GENERAL_PAGE;
+
 public class GeneralCommand implements Command {
     private LoginService loginService = new LoginService();
     private GeneralService generalService = new GeneralService();
@@ -24,35 +27,35 @@ public class GeneralCommand implements Command {
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String login = (String) session.getAttribute("login");
-        User user = loginService.getUserByLogin(login);
-        session.setAttribute("userId",user.getId());
-        List<CategoryProducts> list = generalService.readCategory();
-        UserResult userResult = generalService.readUserResultInfo(user.getId());
-        UserParam userParam = generalService.readUserParamInfo(user.getId());
-        List<EatenProducts> eatenProductsList = showEatenProductsService.getEatenProductList(user.getId());
+        String login = (String) session.getAttribute(ATTR_LOGIN);
+        UserContact userContact = loginService.getUserByLogin(login);
+        session.setAttribute("userId", userContact.getId());
+        //List<CategoryProducts> list = generalService.readCategories();
+        UserResult userResult = generalService.readUserResultInfo(userContact.getId());
+        UserParam userParam = generalService.readUserParamInfo(userContact.getId());
+        List<EatenProducts> eatenProductsList = showEatenProductsService.getEatenProductList(userContact.getId());
         EatenProducts eatenProduct = showEatenProductsService.getResultEatenProduct(eatenProductsList);
         EatenProducts availableBalance = generalService.availableBalance(userResult, eatenProduct);
-        request.setAttribute("user", user);
+        request.setAttribute("userContact", userContact);
         request.setAttribute("userResult", userResult);
         request.setAttribute("userParam", userParam);
         request.setAttribute("eatenProduct", eatenProduct);
         request.setAttribute("availableBalance", availableBalance);
-        request.setAttribute("list", list);
-        request.getRequestDispatcher("/WEB-INF/jsp/general.jsp").forward(request,response);
+        //request.setAttribute("list", list);
+        request.getRequestDispatcher(GENERAL_PAGE).forward(request,response);
     }
 
     private boolean verify(HttpServletRequest request, String login, String password){
         if(Objects.isNull(login) || Objects.isNull(password)) {
-            request.setAttribute("errorMessageLogin","You didn't enter login or password");
+            request.setAttribute("ATTR_ERROR_MESSAGE_LOGIN","You didn't enter login or password");
             return false;
         }
         if(!EnterDataValidator.isValidLogin(login)){
-            request.setAttribute("errorMessageLogin","login incorrect");
+            request.setAttribute("ATTR_ERROR_MESSAGE_LOGIN","login incorrect");
             return false;
         }
         if(!EnterDataValidator.isValidPassword(password)){
-            request.setAttribute("errorMessageLogin","password incorrect");
+            request.setAttribute("ATTR_ERROR_MESSAGE_LOGIN","password incorrect");
             return false;
         }
         return true;

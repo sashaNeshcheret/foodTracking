@@ -4,9 +4,10 @@ import java.math.BigDecimal;
 
 public class Product {
     private int id;
-    private int categoriaId;
+    private int categoryId;
     private String name;
-    private BigDecimal energy_value;
+    private String categoryName;
+    private BigDecimal energyValue;
     private BigDecimal proteins;
     private BigDecimal carbohydrates;
     private BigDecimal fats;
@@ -14,11 +15,19 @@ public class Product {
     public Product() {
     }
 
-    public Product(int id, int categoriaId, String name, BigDecimal energy_value, BigDecimal proteins, BigDecimal carbohydrates, BigDecimal fats) {
+    public Product(int id, int categoryId, String name, BigDecimal energyValue, BigDecimal proteins, BigDecimal carbohydrates, BigDecimal fats) {
         this.id = id;
-        this.categoriaId = categoriaId;
+        this.categoryId = categoryId;
         this.name = name;
-        this.energy_value = energy_value;
+        this.energyValue = energyValue;
+        this.proteins = proteins;
+        this.carbohydrates = carbohydrates;
+        this.fats = fats;
+    }
+    public Product(int categoryId, String name, BigDecimal energyValue, BigDecimal proteins, BigDecimal carbohydrates, BigDecimal fats) {
+        this.categoryId = categoryId;
+        this.name = name;
+        this.energyValue = energyValue;
         this.proteins = proteins;
         this.carbohydrates = carbohydrates;
         this.fats = fats;
@@ -32,12 +41,12 @@ public class Product {
         this.id = id;
     }
 
-    public int getCategoriaId() {
-        return categoriaId;
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategoriaId(int categoriaId) {
-        this.categoriaId = categoriaId;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
     public String getName() {
@@ -48,12 +57,20 @@ public class Product {
         this.name = name;
     }
 
-    public BigDecimal getEnergy_value() {
-        return energy_value;
+    public String getCategoryName() {
+        return categoryName;
     }
 
-    public void setEnergy_value(BigDecimal energy_value) {
-        this.energy_value = energy_value;
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    public BigDecimal getEnergyValue() {
+        return energyValue;
+    }
+
+    public void setEnergyValue(BigDecimal energyValue) {
+        this.energyValue = energyValue;
     }
 
     public BigDecimal getProteins() {

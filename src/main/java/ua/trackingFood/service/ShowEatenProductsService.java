@@ -55,7 +55,7 @@ public class ShowEatenProductsService {
     }
     /**Read info about exists product's category
      */
-    /*public List<CategoryProducts> readCategory() {
+    /*public List<CategoryProducts> readCategories() {
         List<CategoryProducts> categoryProductsList = null;
         try {
             categoryProductsList = daoEatenProducts.read();
@@ -66,10 +66,10 @@ public class ShowEatenProductsService {
     }*/
     /**Read info about exists product's category
      */
-    public List<Product> getProductsList(int categoryId) {
+    public List<Product> getProductsList(int categoryId, int from, int size) {
         List<Product> productList = null;
         try {
-            productList = daoProduct.read(categoryId);
+            productList = daoProduct.read(categoryId, from, size);
         } catch (DAOException e) {
 //
         }

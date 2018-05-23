@@ -2,7 +2,7 @@ package ua.trackingFood.dao.Impl;
 
 
 import ua.trackingFood.dao.DAOUsers;
-import ua.trackingFood.entity.User;
+import ua.trackingFood.entity.UserContact;
 import ua.trackingFood.exception.ConnectionException;
 import ua.trackingFood.exception.DAOException;
 import ua.trackingFood.transactions.ConnectionWrapper;
@@ -23,24 +23,24 @@ public class DAOUsersImpl implements DAOUsers {
     protected DAOUsersImpl(){
     }
 
-    /**Insert object user in database "User"
+    /**Insert object userContact in database "UserContact"
      *
-     * @param user
+     * @param userContact
      * @throws ua.trackingFood.exception.DAOException this is own exception that combines exceptions which
      * happened during work with database
      */
-    public void create(User user) throws DAOException {
+    public void create(UserContact userContact) throws DAOException {
         try(ConnectionWrapper connection = TransactionManager.getConnection()) {
             PreparedStatement preparedStatement = connection.preparedStatement(SQL_INSERT);
-            preparedStatement.setString(1, user.getName());
-            preparedStatement.setString(2, user.getSurname());
-            preparedStatement.setString(3, user.getLogin());
-            preparedStatement.setString(4, user.getPassword());
-            preparedStatement.setString(5, user.getMail_adress());
+            preparedStatement.setString(1, userContact.getName());
+            preparedStatement.setString(2, userContact.getSurname());
+            preparedStatement.setString(3, userContact.getLogin());
+            preparedStatement.setString(4, userContact.getPassword());
+            preparedStatement.setString(5, userContact.getMail_adress());
             preparedStatement.executeUpdate();
         } catch (SQLException | ConnectionException e) {
-            logger.warning(String.format("Method create(user " + user + ") has thrown an exception."));
-            throw new DAOException(String.format("Method create(user " + user + ") has thrown an exception."), e);
+            logger.warning(String.format("Method create(userContact " + userContact + ") has thrown an exception."));
+            throw new DAOException(String.format("Method create(userContact " + userContact + ") has thrown an exception."), e);
         }
     }
 
@@ -51,26 +51,26 @@ public class DAOUsersImpl implements DAOUsers {
      * @throws DAOException this is own exception that combines exceptions which
      * happened during work with database
      */
-    public User read(String login) throws DAOException {
-        User user = null;
+    public UserContact read(String login) throws DAOException {
+        UserContact userContact = null;
         try(ConnectionWrapper connection = TransactionManager.getConnection()) {
             PreparedStatement preparedStatement = connection.preparedStatement(SQL_SELECT);
             preparedStatement.setString(1, login);
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()){
-                user = new User();
-                user.setId(resultSet.getInt(1));
-                user.setName(resultSet.getString(2));
-                user.setSurname(resultSet.getString(3));
-                user.setLogin(resultSet.getString(4));
-                user.setPassword(resultSet.getString(5));
-                user.setMail_adress(resultSet.getString(6));
+                userContact = new UserContact();
+                userContact.setId(resultSet.getInt(1));
+                userContact.setName(resultSet.getString(2));
+                userContact.setSurname(resultSet.getString(3));
+                userContact.setLogin(resultSet.getString(4));
+                userContact.setPassword(resultSet.getString(5));
+                userContact.setMail_adress(resultSet.getString(6));
                 }
         } catch (SQLException | ConnectionException e){
             logger.warning(String.format("Method read(login: '%s') has thrown an exception.", login));
             throw new DAOException(String.format("Method read(login: '%s') has thrown an exception.", login), e);
         }
-        return user;
+        return userContact;
     }
 
     /**Delete user in DB by login

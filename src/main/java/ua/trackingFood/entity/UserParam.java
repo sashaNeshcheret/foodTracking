@@ -15,6 +15,8 @@ public class UserParam {
     private int userId;
     private String sex;
     private int lifeStyleId;
+    private String lifeStyle;
+    private BigDecimal index;
     private int age;
     private BigDecimal height;
     private BigDecimal weight;
@@ -23,10 +25,25 @@ public class UserParam {
     public UserParam() {
     }
 
-    public UserParam(int userId, String sex, int lifeStyle_id, int age, BigDecimal height, BigDecimal weight, String expectedResult) {
+    public UserParam(int userId, String sex, int lifeStyle_id, int age, BigDecimal height,
+                     BigDecimal weight, String expectedResult) {
         this.userId = userId;
         this.sex = sex;
         this.lifeStyleId = lifeStyle_id;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.expectedResult = expectedResult;
+    }
+
+    public UserParam(int id, int userId, String sex, int lifeStyleId, String lifeStyle,
+                     BigDecimal index, int age, BigDecimal height, BigDecimal weight, String expectedResult) {
+        this.id = id;
+        this.userId = userId;
+        this.sex = sex;
+        this.lifeStyleId = lifeStyleId;
+        this.lifeStyle = lifeStyle;
+        this.index = index;
         this.age = age;
         this.height = height;
         this.weight = weight;
@@ -63,6 +80,22 @@ public class UserParam {
 
     public void setLifeStyleId(int lifeStyleId) {
         this.lifeStyleId = lifeStyleId;
+    }
+
+    public String getLifeStyle() {
+        return lifeStyle;
+    }
+
+    public void setLifeStyle(String lifeStyle) {
+        this.lifeStyle = lifeStyle;
+    }
+
+    public BigDecimal getIndex() {
+        return index;
+    }
+
+    public void setIndex(BigDecimal index) {
+        this.index = index;
     }
 
     public int getAge() {

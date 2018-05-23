@@ -18,12 +18,14 @@ public class DAOUserParamImpl implements DAOUserParam {
     private static  final String SQL_SELECT = "SELECT * FROM user_param where user_id = ?";
     private static  final String SQL_INSERT = "INSERT INTO user_param (user_id, sex, lifestyle_id, " +
             "age, height, weight, expected_result) VALUES(?,?,?,?,?,?,?)";
+    private static  final String SQL_UPDATE = "Update tracking_food.user_param SET sex=?, lifestyle_id=?, age=?, " +
+            "height=?, weight=?, expected_result=? where user_id = ?";
     private static  final String SQL_DELETE = "DELETE from user_param.users WHERE login = ?";
 
     protected DAOUserParamImpl(){
     }
 
-    /**Insert object user in database "User"
+    /**Insert object user in database "UserContact"
      *
      * @param user
      * @throws DAOException this is own exception that combines exceptions which
@@ -69,14 +71,32 @@ public class DAOUserParamImpl implements DAOUserParam {
                 userParam.setHeight(resultSet.getBigDecimal(6));
                 userParam.setWeight(resultSet.getBigDecimal(7));
                 userParam.setExpectedResult(resultSet.getString(8));
-                }
+            }
         } catch (SQLException | ConnectionException e){
             logger.warning(String.format("Method read(userId: '%s') has thrown an exception.", userId));
             throw new DAOException(String.format("Method read(userId: '%s') has thrown an exception.", userId), e);
         }
         return userParam;
     }
+   // "Update tracking_food.user_param SET sex=?, lifestyle_id=?, age=?, height=?, weight=?, expected_result=? where user_id = ?";
+    public void update(UserParam user) throws DAOException {
+        try(ConnectionWrapper connection = TransactionManager.getConnection()) {
+            PreparedStatement preparedStatement = connection.preparedStatement(SQL_UPDATE);
 
+            preparedStatement.setString(1, user.getSex());
+            preparedStatement.setInt(2, user.getLifeStyleId());
+            preparedStatement.setInt(3, user.getAge());
+            preparedStatement.setBigDecimal(4, user.getHeight());
+            preparedStatement.setBigDecimal(5, user.getWeight());
+            preparedStatement.setString(6, user.getExpectedResult());
+
+            preparedStatement.setInt(7, user.getUserId());
+            preparedStatement.executeUpdate();
+        } catch (SQLException | ConnectionException e) {
+            logger.warning(String.format("Method create(user " + user + ") has thrown an exception."));
+            throw new DAOException(String.format("Method create(user " + user + ") has thrown an exception."), e);
+        }
+    }
     /**Delete user in DB by login
      *
      * @param login
