@@ -47,3 +47,11 @@ CREATE TABLE IF NOT EXISTS current_check (
   FOREIGN KEY (product_id)
   REFERENCES products (id)
 );
+CREATE TABLE IF NOT EXISTS user_contact (
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(85) NOT NULL, /*83 is max length name in the world*/
+  surname VARCHAR(85) NOT NULL,
+  login VARCHAR(45) NOT NULL UNIQUE,
+  password VARCHAR(45) NOT NULL,
+  mail_address VARCHAR(45),
+);

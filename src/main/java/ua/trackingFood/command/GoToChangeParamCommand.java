@@ -1,9 +1,11 @@
 package ua.trackingFood.command;
 
+import ua.trackingFood.command.Command;
 import ua.trackingFood.entity.UserContact;
 import ua.trackingFood.entity.UserParam;
 import ua.trackingFood.service.GeneralService;
 import ua.trackingFood.service.LoginService;
+import ua.trackingFood.service.ServiceFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -16,9 +18,8 @@ import static ua.trackingFood.utils.resourceHolders.AttributesHolder.ATTR_LOGIN;
 import static ua.trackingFood.utils.resourceHolders.PagesHolder.CHANGE_PARAM_PAGE;
 
 public class GoToChangeParamCommand implements Command {
-    private Logger logger = Logger.getLogger("GoToChangeParamCommand.class");
-    private GeneralService generalService = new GeneralService();
-    private LoginService loginService = new LoginService();
+    private static final GeneralService generalService = ServiceFactory.getServiceFactory().getGeneralService();
+    private static final LoginService loginService = ServiceFactory.getServiceFactory().getLoginService();
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

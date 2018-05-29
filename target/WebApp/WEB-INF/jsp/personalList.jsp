@@ -2,25 +2,24 @@
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <html><head><title>Enjoy your day</title></head>
 <body>
-<h1 align="center">Enjoy your day</h1>
 
 <form align="right" name="LogOut" method="GET" action="servlet">
     <input type="hidden" name="command" value="logOut" />
-    <input type="submit" value="Вийти"/>
+    <input type="submit" value="Log out"/>
 </form>
 
 <h3 align="center">Your eaten products today and it's parameter</h3>
 
 <table width="80%" border="2" cellpadding="7" cellspacing="0" align="center">
     <tr colspan="2" bgcolor="#D3EDF6" align="center" valign="center">
-        <td width="40%">Назва продукту</td>
-        <td width="8%">Кількість</td>
-        <td width="8%">Енергетична цінність</td>
-        <td width="8%">білки</td>
-        <td width="8%">вуглеводи</td>
-        <td width="8%">жири</td>
-        <td width="8%">час прийому</td>
-        <td width="8%">дія</td>
+        <td width="40%">Name of product</td>
+        <td width="8%">Quantity</td>
+        <td width="8%">Energy value</td>
+        <td width="8%">Proteins</td>
+        <td width="8%">Carbohydrates</td>
+        <td width="8%">Fats</td>
+
+        <td width="8%">Action</td>
     </tr>
 </table>
 <form align="center" name="addEatenProducts" method="GET" action="servlet">
@@ -33,7 +32,6 @@
                 <td width="8%" height="3">${products.proteins}</td>
                 <td width="8%" height="3">${products.carbohydrates}</td>
                 <td width="8%" height="3">${products.fats}</td>
-                <td width="8%" height="3">${products.date}</td>
                 <td width="8%" height="3">
                     <form name="chooseCategory" method="GET" action="servlet">
                         <input type="hidden" name="command" value="deleteEatenProduct" />
@@ -47,7 +45,7 @@
 </form>
 <table width="80%" border="1" cellpadding="7"  align="center">
     <tr colspan="2" align="center" valign="center">
-        <td width="48%" height="3">Загальна кількість</td>
+        <td width="48%" height="3">Total number</td>
         <td width="8%" height="3">${eatenProduct.energyValue}</td>
         <c:if test="${eatenProduct.energyValue == 0}">
             <td width="8%" height="3">${eatenProduct.proteins}</td>
@@ -59,7 +57,7 @@
             <td width="8%" height="3">${eatenProduct.carbohydrates} or ${eatenProduct.carbohydrates*100/eatenProduct.energyValue}%</td>
             <td width="8%" height="3">${eatenProduct.fats} or ${eatenProduct.fats*100/eatenProduct.energyValue}%</td>
         </c:if>
-        <td width="8%" height="3"></td>
+
         <td width="8%">
         </td>
     </tr>

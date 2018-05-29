@@ -1,20 +1,22 @@
 package ua.trackingFood.service;
 
 
+import org.apache.log4j.Logger;
 import ua.trackingFood.dao.DAOUsers;
 import ua.trackingFood.dao.Impl.DAOFactory;
 import ua.trackingFood.entity.UserContact;
 import ua.trackingFood.exception.DAOException;
 
-import java.util.logging.Logger;
-
 /**
  * Created by Нещерет on 01.05.2018.
  */
 public class LoginService {
+    private static final Logger LOGGER = Logger.getLogger(LoginService.class.getSimpleName());
     private DAOUsers daoUsers = DAOFactory.getDaoFactory().getDAOUsers();
-    private Logger logger = Logger.getLogger("LoginService.class");
 
+    public void setDaoUsers(DAOUsers daoUsers){
+        this.daoUsers = daoUsers;
+    }
 
     /**Check login and password in accordance of DB
      *
@@ -33,7 +35,7 @@ public class LoginService {
                 return true;
             }
         } catch (DAOException e) {
-
+            LOGGER.error("method readCategories thrown DAOException", e);
         }
         return false;
     }

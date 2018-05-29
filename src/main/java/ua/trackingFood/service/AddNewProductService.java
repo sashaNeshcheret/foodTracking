@@ -1,21 +1,18 @@
 package ua.trackingFood.service;
 
-import ua.trackingFood.dao.DAOEatenProducts;
+import org.apache.log4j.Logger;
+import ua.trackingFood.command.AddNewCategoryCommand;
 import ua.trackingFood.dao.DAOProduct;
 import ua.trackingFood.dao.Impl.DAOFactory;
-import ua.trackingFood.entity.EatenProducts;
 import ua.trackingFood.entity.Product;
 import ua.trackingFood.exception.DAOException;
 import ua.trackingFood.exception.ServiceException;
 
 import java.math.BigDecimal;
-import java.util.logging.Logger;
 
 public class AddNewProductService {
-    private DAOEatenProducts daoEatenProducts = DAOFactory.getDaoFactory().getDAOEatenProducts();
-    private DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
-    //private DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
-    private Logger logger = Logger.getLogger("AddEatenProductsService.class");
+    private static final DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
+    private static final Logger LOGGER = Logger.getLogger(AddNewProductService.class.getSimpleName());
 
     public void createProduct(String categoryId,String name,String energyValue,String proteins,String carbohydrates,String fats) throws ServiceException {
         Product product = new Product();
@@ -31,7 +28,7 @@ public class AddNewProductService {
             try{
                 daoProduct.create(product);
             } catch (DAOException e) {
-//
+                LOGGER.error("method createProduct thrown DAOException", e);
             }
         }else
         {

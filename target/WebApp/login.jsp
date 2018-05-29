@@ -3,21 +3,21 @@
 <html><head><title>Login</title></head>
 <body>
 <form name="loginForm" method="POST" action="servlet">
-    <h1>Введіть логін і пароль</h1>
+    <h1>Enter login and password</h1>
     <br/>
     <c:if test="${not empty errorMessageLogin}">
         <h5 style="color:#ff0000">${errorMessageLogin}</h5>
     </c:if>
     <input type="hidden" name="command" value="login" />
-    Логін:<br/>
+    Login:<br/>
     <input type="text" name="login" value=""/>
-    <br/>Пароль:<br/>
+    <br/>Password:<br/>
     <input type="password" placeholder="A-Z,a-z,1-9, all 4 char" name="password" value=""/>
     <br/>
     <input type="submit" value="Log in"/>
 </form><hr/>
 <form name="general" method="GET" action="servlet">
     <input type="hidden" name="command" value="goToRegistration" />
-    <input type="submit" value="Перейти до реєстрації"/>
+    <input type="submit" value="Go to registration page"/>
 </form>
 </body></html>

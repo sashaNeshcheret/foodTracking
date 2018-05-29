@@ -1,5 +1,6 @@
 package ua.trackingFood.service;
 
+import org.apache.log4j.Logger;
 import ua.trackingFood.dao.DAOLifeStyle;
 import ua.trackingFood.dao.DAOUserResult;
 import ua.trackingFood.dao.DAOUsers;
@@ -14,7 +15,6 @@ import ua.trackingFood.exception.RegistrationException;
 
 import java.math.BigDecimal;
 import java.util.Objects;
-import java.util.logging.Logger;
 
 /**
  * Created by Нещерет on 02.05.2018.
@@ -24,19 +24,19 @@ public class RegistrationService {
     private DAOUserParam daoUserParam = DAOFactory.getDaoFactory().getDAOUserParam();
     private DAOUserResult daoUserResult = DAOFactory.getDaoFactory().getDAOUserResult();
     private DAOLifeStyle daoLifeStyle = DAOFactory.getDaoFactory().getDAOLifeStyle();
-    private Logger logger = Logger.getLogger("RegistrationService.class");
-
-
+    private static final Logger LOGGER = Logger.getLogger(RegistrationService.class.getSimpleName());
 
     public void register(UserContact userContact) throws RegistrationException {
         try {
             daoUsers.create(userContact);
         } catch (DAOException e) {
+            LOGGER.error("method register thrown DAOException", e);
             throw new RegistrationException(e);
         }
     }
     public void registerStep2(UserParam userParam, UserContact userContact) throws RegistrationException {
         if(Objects.isNull(userParam) || Objects.isNull(userContact)){
+            LOGGER.error("method registerStep2 thrown DAOException");
             throw new RegistrationException("UserParam or UserContact is null");
         }
         try {
@@ -53,6 +53,7 @@ public class RegistrationService {
                 daoUserResult.update(userResult);
             }
         } catch (DAOException e) {
+            LOGGER.error("method register thrown DAOException", e);
             throw  new RegistrationException(e);
         }
     }
@@ -68,9 +69,8 @@ public class RegistrationService {
                 subtract(age));
         levelMetabolism.setScale(2, BigDecimal.ROUND_HALF_UP);
 
-//BigDecimal met = new BigDecimal("231.23");
         BigDecimal normaCalories = levelMetabolism.multiply(lifeStyle.getIndex());
-BigDecimal expectedNormCalories = normaCalories.multiply(new BigDecimal(0.75));
+        BigDecimal expectedNormCalories = normaCalories.multiply(new BigDecimal(0.75));
         BigDecimal proteins = expectedNormCalories.multiply(new BigDecimal(0.35));
         BigDecimal carbohydrates = expectedNormCalories.multiply(new BigDecimal(0.45));
         BigDecimal fats = expectedNormCalories.multiply(new BigDecimal(0.2));

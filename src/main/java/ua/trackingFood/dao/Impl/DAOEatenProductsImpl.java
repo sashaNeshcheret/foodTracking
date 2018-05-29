@@ -78,7 +78,7 @@ public class DAOEatenProductsImpl implements DAOEatenProducts {
      * @throws DAOException this is own exception that combines exceptions which
      * happened during work with database
      */
-    public List<EatenProducts> read(Date date, int id) throws DAOException {
+    public List<EatenProducts> read(int id) throws DAOException {
         LocalDate date1 = LocalDate.now().plusDays(1);
         Date dateSql = Date.valueOf(date1);
         List<EatenProducts> productList = new ArrayList<>();

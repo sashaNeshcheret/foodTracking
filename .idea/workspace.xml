@@ -7,54 +7,288 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7bdadb-d33a-45cb-8ae8-e4b98240c0fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseCategoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseCategoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/EmptyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/EmptyCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/FactoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/FactoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GeneralCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GeneralCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChangeParamCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChangeParamCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToGeneralCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToGeneralCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationParamCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationParamCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LogOutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LogOutCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOCategoryProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOCategoryProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOCategoryProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOCategoryProductsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOProductImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserParamImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserParamImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserResultImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserResultImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUsersImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUsersImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/CategoryProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/CategoryProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/EatenProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/EatenProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddEatenProductsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddEatenProductsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/GeneralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/GeneralService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ShowEatenProductsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ShowEatenProductsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/trackingFood/validation/EnterDataValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/trackingFood/validation/EnterDataValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CreateScriptDB" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CreateScriptDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/changeRegistrationParam.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/changeRegistrationParam.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chooseCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chooseCategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/general.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/general.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personalList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personalList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationParam.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationParam.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/.idea/artifacts/SimpleProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/.idea/artifacts/SimpleProject_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/.idea/libraries/Maven__com_h2database_h2_1_4_196.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/.idea/libraries/Maven__com_h2database_h2_1_4_196.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/SimpleProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/SimpleProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/AddNewCategoryCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/AddNewProductCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/ChooseCategoryCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/DeleteEatenProductCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/EmptyCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/FactoryCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/GeneralCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/GoToChangeParamCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/GoToGeneralCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/GoToRegistrationCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/GoToRegistrationParamCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/LogOutCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/LoginCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/RegistrationCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/DAOCategoryProducts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/DAOEatenProducts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/DAOLifeStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/DAOProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/DAOUserParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/DAOUserResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/DAOUsers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/Impl/DAOCategoryProductsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/Impl/DAOFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/Impl/DAOLifeStyleImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/Impl/DAOProductImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/Impl/DAOUserParamImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/Impl/DAOUserResultImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/dao/Impl/DAOUsersImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/entity/CategoryProducts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/entity/EatenProducts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/entity/LifeStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/entity/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/entity/UserContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/entity/UserParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/entity/UserResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/exception/ConnectionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/exception/DAOException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/exception/RegistrationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/exception/ServiceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/exception/TransactionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/service/AddEatenProductsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/service/AddNewCategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/service/AddNewProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/service/GeneralService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/service/RegistrationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/service/ShowEatenProductsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/servlet/Servlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/servlet/Servlet1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/transactions/ConnectionPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/transactions/ConnectionWithOutPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/transactions/ConnectionWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/transactions/TransactionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/utils/propertyManagers/AttributesPropertyManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/utils/propertyManagers/JdbcQueriesPropertyManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/utils/propertyManagers/LanguagePropsManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/utils/propertyManagers/PagesPropertyManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/utils/resourceHolders/AttributesHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/utils/resourceHolders/MessagesHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/utils/resourceHolders/PagesHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/java/ua/trackingFood/validation/EnterDataValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/CreateDataMySQLDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/CreateScriptDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/CreateTestDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/CreateTestDataDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/attributes.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/filterLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/pages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/web.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/resources/структура.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/jsp/changeRegistrationParam.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/jsp/chooseCategory.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/jsp/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/jsp/general.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/jsp/personalList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/jsp/productsList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/jsp/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/jsp/registrationParam.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/CreateDataMySQLDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/CreateScriptDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/CreateTestDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/CreateTestDataDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/attributes.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/filterLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/pages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/AddAndShowEatenProductsCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/AddAndShowEatenProductsCommand1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/AddNewCategoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/AddNewProductCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/ChooseCategoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/DeleteEatenProductCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/EmptyCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/FactoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/GeneralCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/GoToChangeParamCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/GoToChooseCategoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/GoToGeneralCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/GoToRegistrationCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/GoToRegistrationParamCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/LogOutCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/LoginCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/RegistrationCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/command/RegistrationParamCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/DAOCategoryProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/DAOEatenProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/DAOLifeStyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/DAOProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/DAOUserParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/DAOUserResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/DAOUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/Impl/DAOCategoryProductsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/Impl/DAOFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/Impl/DAOLifeStyleImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/Impl/DAOProductImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/Impl/DAOUserParamImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/Impl/DAOUserResultImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/dao/Impl/DAOUsersImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/entity/CategoryProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/entity/EatenProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/entity/LifeStyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/entity/UserContact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/entity/UserParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/entity/UserResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/exception/ConnectionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/exception/DAOException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/exception/RegistrationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/exception/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/exception/TransactionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/service/AddEatenProductsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/service/AddNewCategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/service/AddNewProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/service/GeneralService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/service/RegistrationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/service/ShowEatenProductsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/servlet/Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/servlet/Servlet1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/transactions/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/transactions/ConnectionWithOutPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/transactions/ConnectionWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/transactions/TransactionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/utils/propertyManagers/AttributesPropertyManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/utils/propertyManagers/JdbcQueriesPropertyManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/utils/propertyManagers/LanguagePropsManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/utils/propertyManagers/PagesPropertyManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/utils/resourceHolders/AttributesHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/utils/resourceHolders/MessagesHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/utils/resourceHolders/PagesHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/ua/trackingFood/validation/EnterDataValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/web.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/classes/структура.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/jsp/changeRegistrationParam.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/jsp/chooseCategory.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/jsp/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/jsp/general.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/jsp/personalList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/jsp/productsList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/jsp/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/jsp/registrationParam.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/lib/h2-1.4.196.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/lib/mysql-connector-java-6.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/WebApp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/CreateDataMySQLDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/CreateScriptDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/CreateTestDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/CreateTestDataDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/attributes.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/filterLog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/pages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/AddAndShowEatenProductsCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/AddAndShowEatenProductsCommand1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/AddNewCategoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/AddNewProductCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/ChooseCategoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/DeleteEatenProductCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/EmptyCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/FactoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/GeneralCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/GoToChangeParamCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/GoToChooseCategoryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/GoToGeneralCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/GoToRegistrationCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/GoToRegistrationParamCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/LogOutCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/LoginCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/RegistrationCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/command/RegistrationParamCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/DAOCategoryProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/DAOEatenProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/DAOLifeStyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/DAOProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/DAOUserParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/DAOUserResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/DAOUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/Impl/DAOCategoryProductsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/Impl/DAOFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/Impl/DAOLifeStyleImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/Impl/DAOProductImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/Impl/DAOUserParamImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/Impl/DAOUserResultImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/dao/Impl/DAOUsersImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/entity/CategoryProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/entity/EatenProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/entity/LifeStyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/entity/UserContact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/entity/UserParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/entity/UserResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/exception/ConnectionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/exception/DAOException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/exception/RegistrationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/exception/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/exception/TransactionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/service/AddEatenProductsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/service/AddNewCategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/service/AddNewProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/service/GeneralService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/service/RegistrationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/service/ShowEatenProductsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/servlet/Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/servlet/Servlet1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/transactions/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/transactions/ConnectionWithOutPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/transactions/ConnectionWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/transactions/TransactionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/utils/propertyManagers/AttributesPropertyManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/utils/propertyManagers/JdbcQueriesPropertyManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/utils/propertyManagers/LanguagePropsManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/utils/propertyManagers/PagesPropertyManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/utils/resourceHolders/AttributesHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/utils/resourceHolders/MessagesHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/utils/resourceHolders/PagesHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/ua/trackingFood/validation/EnterDataValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/web.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/classes/структура.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Epam Spring/TrackingFood/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,64 +308,48 @@
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
     <expand />
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="chooseCategory.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chooseCategory.jsp">
+      <file leaf-file-name="Servlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+            <state relative-caret-position="456">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DAOProductImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOProductImpl.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="612">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttributesHolder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/resourceHolders/AttributesHolder.java">
+      <file leaf-file-name="RegistrationCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="62" column="44" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="44" />
+            <state relative-caret-position="300">
+              <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddAndShowEatenProductsCommand.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand.java">
+      <file leaf-file-name="RegistrationParamCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="attributes.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/attributes.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="68" column="26" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChooseCategoryCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseCategoryCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            <state relative-caret-position="199">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,11 +357,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productsList.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList.jsp">
+      <file leaf-file-name="DAOUserResultImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserResultImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+            <state relative-caret-position="427">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/LoginService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAOUsersImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUsersImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAOFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#1055#1056#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1155#1156#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnterDataValidator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/validation/EnterDataValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+              <folding>
+                <element signature="method#isValidSex#0;class#EnterDataValidator#0" />
+                <element signature="method#isValidExpectedResult#0;class#EnterDataValidator#0" />
+                <element signature="method#isValidLifeStyle#0;class#EnterDataValidator#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,63 +435,71 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>INFO</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>DEBUG</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../Epam Spring/TrackingFood" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChangeParamCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/changeRegistrationParam.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserResultImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/exceptions/ServiceException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/resourceHolders/PagesHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/pages.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/EmptyCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationParamCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LogOutCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/FactoryCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/DeleteEatenProductCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChangeParamCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToGeneralCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/propertyManagers/LanguagePropsManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/propertyManagers/JdbcQueriesPropertyManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/resourceHolders/JdbcQueriesHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GeneralCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddNewCategoryCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/validation/EnterDataValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationParam.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserParamImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ShowEatenProductsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/resourceHolders/MessagesHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddNewProductCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand1.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/attributes.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOCategoryProducts.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOCategoryProductsImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/GeneralService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/resourceHolders/AttributesHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chooseCategory.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseCategoryCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOProductImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddNewCategoryCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddNewProductCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/DeleteEatenProductCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GeneralCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChangeParamCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToGeneralCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationParamCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LogOutCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOEatenProducts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseCategoryCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/EmptyCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/attributes.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/pages.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/changeRegistrationParam.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chooseCategory.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personalList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationParam.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/GeneralService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddEatenProductsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddNewCategoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddNewProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ShowEatenProductsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseEatenProductsCommand.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/trackingFood/UsersJdbcDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/general.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/FactoryCommand.java" />
+        <option value="C:/Program Files/Apache Software Foundation/Tomcat 9.0/conf/logging.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/transactions/TransactionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/trackingFood/validation/EnterDataValidator.java" />
       </list>
     </option>
   </component>
@@ -239,14 +523,34 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SimpleProject Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SimpleProject Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SimpleProject Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="8" />
-    <option name="y" value="7" />
+    <option name="x" value="822" />
     <option name="width" value="779" />
-    <option name="height" value="855" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -257,44 +561,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -302,112 +605,54 @@
               <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="Impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="propertyManagers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="resourceHolders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TrackingFood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrackingFood" type="462c0819:PsiDirectoryNode" />
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="foodTracking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foodTracking" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="trackingFood" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -416,7 +661,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="H2&#10;MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../UniverEpamJava/Periodicals" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -425,18 +670,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\UniverEpamJava\foodTracking\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\IdeaProjects\UniverEpamJava\foodTracking\src\main\webapp" />
+      <recent name="D:\IdeaProjects\UniverEpamJava\foodTracking\src\main\webapp\WEB-INF" />
+      <recent name="D:\IdeaProjects\UniverEpamJava\foodTracking\src\main\resources" />
       <recent name="D:\IdeaProjects\Epam Spring\TrackingFood\src\main\webapp\WEB-INF\jsp" />
-      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src\main\resources" />
-      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src\test\ua\simpleproject" />
-      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src" />
-      <recent name="C:\Users\Нещерет\IdeaProjects\SimpleProject2\src\main\java\ua\simpleproject\filters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\UniverEpamJava\foodTracking\src\test" />
       <recent name="D:\IdeaProjects\Epam Spring\TrackingFood\src\main\resources" />
       <recent name="D:\IdeaProjects\Epam Spring\TrackingFood\src\main\java\ua\trackingFood" />
       <recent name="D:\IdeaProjects\1\SimpleProject2\src\main\webapp\WEB-INF\jsp" />
       <recent name="D:\IdeaProjects\1\SimpleProject2\src\main\webapp\WEB-INF" />
-      <recent name="D:\IdeaProjects\1\SimpleProject2\src\main\java\ua\" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ua.trackingFood.command" />
@@ -695,6 +940,10 @@
       <workItem from="1526680654876" duration="6842000" />
       <workItem from="1526693283121" duration="6003000" />
       <workItem from="1526734378933" duration="146789000" />
+      <workItem from="1527235217065" duration="1202000" />
+      <workItem from="1527238370315" duration="10059000" />
+      <workItem from="1527330789410" duration="1346000" />
+      <workItem from="1527535447721" duration="5418000" />
     </task>
     <servers />
   </component>
@@ -731,36 +980,35 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="866564000" />
+    <option name="totallyTimeSpent" value="884589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50125" side_tool="true" visible="true" weight="0.2591146" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50397617" side_tool="true" weight="0.38996765" />
       <window_info anchor="bottom" id="Application Servers" order="0" weight="0.3294271" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.29733333" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.014553014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.5234375" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49875" weight="0.19865772" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49875" weight="0.1796875" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.496875" weight="0.29395974" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49875" visible="true" weight="0.2591146" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49602386" weight="0.36778525" />
       <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.159375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23714653" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.33333334" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -769,6 +1017,7 @@
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3324138" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -841,13 +1090,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/DeleteEatenProductCommand.java</url>
-          <line>48</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddNewProductService.java</url>
-          <line>28</line>
+          <line>23</line>
           <properties />
           <option name="timeStamp" value="96" />
         </line-breakpoint>
@@ -858,443 +1107,413 @@
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddNewCategoryCommand.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand.java</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseEatenProductsCommand.java</url>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseEatenProductsCommand.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseEatenProductsCommand.java</url>
+          <line>24</line>
+          <properties field="generalService" class="ua.trackingFood.command.ChooseEatenProductsCommand" />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="108" />
+      <option name="time" value="112" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/pages.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GeneralCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="463">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChangeParamCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChangeParamCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="85" selection-end-column="7" />
+        <state relative-caret-position="340">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/Command.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="381">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToGeneralCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="463">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/FactoryCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/resourceHolders/JdbcQueriesHolder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationParamCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        <state relative-caret-position="187">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/math/BigDecimal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="804" column="11" selection-start-line="804" selection-start-column="11" selection-end-line="804" selection-end-column="11" />
-          <folding>
-            <element signature="e#34114#34115#0" expanded="true" />
-            <element signature="e#34170#34171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/propertyManagers/LanguagePropsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/propertyManagers/JdbcQueriesPropertyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="463">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LogOutCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToGeneralCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChooseCategoryCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToChangeParamCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GeneralCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/EmptyCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/DeleteEatenProductCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/GoToRegistrationParamCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddNewCategoryCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" lean-forward="true" selection-start-line="25" selection-start-column="80" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="46" column="128" selection-start-line="46" selection-start-column="128" selection-end-line="46" selection-end-column="128" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="62" selection-end-line="60" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/validation/EnterDataValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-          <folding>
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationParam.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-          <folding>
-            <element signature="e#2270#2271#0" expanded="true" />
-            <element signature="e#2302#2303#0" expanded="true" />
-            <element signature="e#2352#2353#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-            <element signature="e#2430#2431#0" expanded="true" />
-            <element signature="e#2458#2459#0" expanded="true" />
-            <element signature="e#2504#2505#0" expanded="true" />
-            <element signature="e#2538#2539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/entity/UserContact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#575#576#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOUserParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOEatenProducts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserParamImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="76" column="92" lean-forward="true" selection-start-line="76" selection-start-column="92" selection-end-line="76" selection-end-column="92" />
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOEatenProductsImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/resourceHolders/PagesHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/propertyManagers/AttributesPropertyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/propertyManagers/PagesPropertyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/resourceHolders/MessagesHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ShowEatenProductsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="72" column="34" lean-forward="true" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="153" column="7" lean-forward="true" selection-start-line="153" selection-start-column="7" selection-end-line="153" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOCategoryProducts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/DAOProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/GeneralService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="153" column="20" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseCategoryCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="484">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddNewProductCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/EmptyCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="69" column="82" selection-start-line="69" selection-start-column="72" selection-end-line="69" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOCategoryProductsImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/attributes.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        <state relative-caret-position="486">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/pages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/changeRegistrationParam.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/chooseCategory.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        <state relative-caret-position="463">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOProductImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="463">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personalList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productsList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
-          <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+          <caret line="115" column="14" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/attributes.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="463">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/utils/resourceHolders/AttributesHolder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registrationParam.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="62" column="44" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="44" />
+        <state relative-caret-position="714">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddAndShowEatenProductsCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/GeneralService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+        <state relative-caret-position="2431">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddEatenProductsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddNewCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/AddNewProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/ShowEatenProductsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/ua/trackingFood/UsersJdbcDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/ua/trackingFood/LoginServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/ChooseEatenProductsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/FactoryCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="26" column="77" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Apache Software Foundation/Tomcat 9.0/conf/logging.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="51" column="58" lean-forward="true" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet1.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOCategoryProductsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-715">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/AddNewCategoryCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/DeleteEatenProductCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserParamImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/general.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/transactions/TransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/validation/EnterDataValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+          <folding>
+            <element signature="method#isValidSex#0;class#EnterDataValidator#0" />
+            <element signature="method#isValidExpectedResult#0;class#EnterDataValidator#0" />
+            <element signature="method#isValidLifeStyle#0;class#EnterDataValidator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUsersImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/dao/Impl/DAOUserResultImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/service/RegistrationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/command/RegistrationParamCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/trackingFood/servlet/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>

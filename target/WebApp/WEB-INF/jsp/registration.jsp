@@ -3,7 +3,7 @@
 <html><head><title>Registration</title></head>
 <body>
 <form name="registrationForm" method="POST" action="servlet">
-    <h1>Заповніть відповідні поля</h1>
+    <h1>Fill appropriate form lines</h1>
     <br/>
     <c:if test="${not empty errorMessageLogin}">
         <h5 style="color:#ff0000">${errorMessageLogin}</h5>
@@ -12,7 +12,7 @@
     <br/>Login:<br/>
     <input type="text" name="login" value="" required=""/>
     <br/>Password:<br/>
-    <input type="password" name="password" value="" required=""/>
+    <input type="text" name="password" value="" required=""/>
     <br/>Name:<br/>
     <input type="text" name="name" value="" required=""/>
     <br/>Surname:<br/>
@@ -27,5 +27,5 @@
 <!--<input type="submit" value="або пропусти і перейти на головну"/>
 -->
 
-<a href="/login.jsp">Увійти, якшо ви зареєстровані</a><br/>
+<a href="/login.jsp">Log on if you registrated</a><br/>
 </body></html>

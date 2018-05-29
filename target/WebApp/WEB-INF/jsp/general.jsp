@@ -12,7 +12,7 @@
         <td width="30%" height="2%">
             <form align="right" name="LogOut" method="GET" action="servlet">
                 <input type="hidden" name="command" value="logOut" />
-                <input type="submit" value="Вийти"/>
+                <input type="submit" value="Log out"/>
             </form>
         </td>
     </tr>
@@ -43,7 +43,7 @@
     </table>
     <form align="center" name="goToChangeParam" method="GET" action="servlet">
         <input type="hidden" name="command" value="goToChangeParam" />
-        <input type="submit" value="Змінити персональні данні"/>
+        <input type="submit" value="Change data"/>
     </form>
     <table width="80%" border="2" cellpadding="7" cellspacing="0" align="center">
         <tr colspan="2" bgcolor="#D3EDF6" valign="top" align="center">
@@ -67,7 +67,9 @@
                 <c:if test="${eatenProduct.energyValue > 0}">
                     <form align="center" name="lookProducts" method="GET" action="servlet">
                         <input type="hidden" name="command" value="addAndShowEatenProducts" />
-                        <input type="submit" value="look eaten products"/>
+                        <input type="hidden" name="pageNumber" value="0" />
+                        <input type="hidden" name="categoryId" value="1" />
+                        <input type="submit" name ="Add All Products" value="look eaten products"/>
                     </form>
                 </c:if>
             </td>
@@ -96,9 +98,9 @@
         <input align="center" style="color:#ff0000" type="submit" value="You must have enter your parameters"/>
     </form>
 </c:if>
-<h4 align="center">Щоб додати з'їдені продукти оберіть категорію</h4>
+<h4 align="center">To add eaten products choose category</h4>
 <form align="center" name="choseCategory" method="GET" action="servlet">
     <input type="hidden" name="command" value="goToChooseCategory" />
-    <input type="submit" value="Обрати"/>
+    <input type="submit" value="Choose"/>
 </form>
 </body></html>

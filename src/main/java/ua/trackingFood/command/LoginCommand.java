@@ -1,9 +1,11 @@
 package ua.trackingFood.command;
 
-//import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
+import ua.trackingFood.command.Command;
 import ua.trackingFood.entity.*;
 import ua.trackingFood.service.GeneralService;
 import ua.trackingFood.service.LoginService;
+import ua.trackingFood.service.ServiceFactory;
 import ua.trackingFood.service.ShowEatenProductsService;
 import ua.trackingFood.validation.EnterDataValidator;
 
@@ -20,10 +22,10 @@ import static ua.trackingFood.utils.resourceHolders.PagesHolder.GENERAL_PAGE;
 import static ua.trackingFood.utils.resourceHolders.PagesHolder.LOGIN_PAGE;
 
 public class LoginCommand implements Command {
-    private LoginService loginService = new LoginService();
-    private GeneralService generalService = new GeneralService();
-    private ShowEatenProductsService showEatenProductsService = new ShowEatenProductsService();
-    //private Logger logger = Logger.getLogger(LoginCommand.class);
+    private static final LoginService loginService = ServiceFactory.getServiceFactory().getLoginService();
+    private static final GeneralService generalService = ServiceFactory.getServiceFactory().getGeneralService();
+    private static final ShowEatenProductsService showEatenProductsService = ServiceFactory.getServiceFactory().getShowEatenProductsService();
+    private static final Logger LOGGER = Logger.getLogger(LoginCommand.class);
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,14 +36,15 @@ public class LoginCommand implements Command {
         if(!verify(request, login, password)){
             request.getRequestDispatcher(LOGIN_PAGE).forward(request, response);
         }
-
         if(!loginService.checkLogin(login,password)){
             request.setAttribute(ATTR_ERROR_MESSAGE_LOGIN, "Login or password incorrect");
             request.getRequestDispatcher(LOGIN_PAGE).forward(request, response);
         }
         session.setAttribute(ATTR_LOGIN,login);
         UserContact userContact = loginService.getUserByLogin(login);
+        LOGGER.info("user"+userContact.getLogin()+" enter");
         session.setAttribute(ATTR_USER_ID, userContact.getId());
+
         List<CategoryProducts> categoryList = generalService.readCategories();
         UserResult userResult = generalService.readUserResultInfo(userContact.getId());
         UserParam userParam = generalService.readUserParamInfo(userContact.getId());
@@ -49,8 +52,6 @@ public class LoginCommand implements Command {
         EatenProducts eatenProduct = showEatenProductsService.getResultEatenProduct(eatenProductsList);
         EatenProducts availableBalance = generalService.availableBalance(userResult, eatenProduct);
         String message = generalService.consumptionAnalysis(eatenProduct, userResult);
-//String messageWarning = generalService.consumptionAnalysis(eatenProduct, userResult);
-//String messageError = generalService.consumptionAnalysis(eatenProduct, userResult);
         request.setAttribute("message", message);
         request.setAttribute("userContact", userContact);
         request.setAttribute("userResult", userResult);

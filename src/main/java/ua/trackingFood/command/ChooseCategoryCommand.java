@@ -1,10 +1,12 @@
 package ua.trackingFood.command;
 
-//import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
+import ua.trackingFood.command.Command;
 import ua.trackingFood.entity.CategoryProducts;
 import ua.trackingFood.entity.Product;
 import ua.trackingFood.service.GeneralService;
 import ua.trackingFood.service.LoginService;
+import ua.trackingFood.service.ServiceFactory;
 import ua.trackingFood.validation.EnterDataValidator;
 
 import javax.servlet.ServletException;
@@ -22,9 +24,8 @@ import static ua.trackingFood.utils.resourceHolders.PagesHolder.LOGIN_PAGE;
 import static ua.trackingFood.utils.resourceHolders.PagesHolder.PRODUCTS_LIST_PAGE;
 
 public class ChooseCategoryCommand implements Command {
-    private LoginService loginService = new LoginService();
-    private GeneralService generalService = new GeneralService();
-    //private Logger logger = Logger.getLogger(LoginCommand.class);
+    private static final GeneralService generalService = ServiceFactory.getServiceFactory().getGeneralService();
+    private static final Logger LOGGER = Logger.getLogger(ChooseCategoryCommand.class.getSimpleName());
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -43,11 +44,12 @@ public class ChooseCategoryCommand implements Command {
             request.setAttribute("list", categoryList);
             request.getRequestDispatcher(CHOOSE_CATEGORY_PAGE).forward(request,response);
         }
-        List<Product> productsList = generalService.getProductsList(categoryId, from, NUM_PER_PAGE);
+        List<Product> productsList = generalService.getProductsList(categoryId, from*NUM_PER_PAGE, NUM_PER_PAGE);
         CategoryProducts categoryProducts = generalService.readCategory(categoryId);
         request.setAttribute(ATTR_PAGE_NUM, from);
         request.setAttribute("categoryProducts", categoryProducts);
         request.setAttribute("productsList", productsList);
+        LOGGER.info("method execute run");
         request.getRequestDispatcher(PRODUCTS_LIST_PAGE).forward(request,response);
     }
 

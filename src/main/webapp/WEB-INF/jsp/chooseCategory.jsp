@@ -3,7 +3,7 @@
 <html><head><title>Enjoy your day</title></head>
 <form align="right" name="LogOut" method="GET" action="servlet">
     <input type="hidden" name="command" value="logOut" />
-    <input type="submit" value="Вийти"/>
+    <input type="submit" value="Log out"/>
 </form>
 <!--<h2 align="center">Enjoy your day tracking food</h2>-->
 <c:if test="${not empty message}">
@@ -13,8 +13,8 @@
 
 <table width="80%" border="2" cellpadding="7" cellspacing="0" align="center">
     <tr colspan="2" bgcolor="#D3EDF6" valign="top" align="center">
-        <td width="55%">Назва категоії</td>
-        <td width="20%">Обрати</td>
+        <td width="55%">Name of category</td>
+        <td width="20%">Choose</td>
     </tr>
 </table>
 

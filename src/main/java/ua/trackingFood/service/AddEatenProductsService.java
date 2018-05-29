@@ -1,5 +1,6 @@
 package ua.trackingFood.service;
 
+import org.apache.log4j.Logger;
 import ua.trackingFood.dao.DAOEatenProducts;
 import ua.trackingFood.dao.DAOProduct;
 import ua.trackingFood.dao.Impl.DAOFactory;
@@ -11,25 +12,17 @@ import java.math.BigDecimal;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class AddEatenProductsService {
-    private DAOEatenProducts daoEatenProducts = DAOFactory.getDaoFactory().getDAOEatenProducts();
-    private DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
-    //private DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
-    private Logger logger = Logger.getLogger("AddEatenProductsService.class");
+    private static final DAOEatenProducts daoEatenProducts = DAOFactory.getDaoFactory().getDAOEatenProducts();
+    private static final Logger LOGGER = Logger.getLogger(AddEatenProductsService.class.getSimpleName());
 
 
-    //по айди продукта берем значения параметров продуктов
-    //получение параметри  перемножем на вес
-    //результат записіваем в entity eatenProducts
     public void createEatenProducts(Product product, BigDecimal weightProduct, int userId){
-
         EatenProducts eatenProducts = null;
         List<EatenProducts> list = new ArrayList<>();
         try {
-            // вибрати продукти з бази даниих, отримати список
-list = daoEatenProducts.read(new Date(2001), userId);
+            list = daoEatenProducts.read(userId);
             for(EatenProducts products : list){
                 if(products.getProductId() == product.getId()){
                     BigDecimal weight = products.getWeight().add(weightProduct);
@@ -41,7 +34,7 @@ list = daoEatenProducts.read(new Date(2001), userId);
             eatenProducts = countProductsParam(product, weightProduct, userId);
             daoEatenProducts.create(eatenProducts);
         } catch (DAOException e) {
-//
+            LOGGER.error("method createEatenProducts thrown DAOException", e);
         }
     }
 
@@ -61,7 +54,7 @@ list = daoEatenProducts.read(new Date(2001), userId);
         try {
             daoEatenProducts.delete(productId);
         } catch (DAOException e) {
-//e.printStackTrace();
+            LOGGER.error("method countProductsParam thrown DAOException", e);
         }
     }
 }

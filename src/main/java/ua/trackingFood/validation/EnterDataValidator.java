@@ -88,6 +88,56 @@ public class EnterDataValidator {
         }
         return true;
     }
+    public static boolean isValidAge(String age){
+        BigDecimal number;
+        if(Objects.isNull(age)){
+            return false;
+        }
+        try{
+            number = new BigDecimal(age);
+        }catch (NumberFormatException e){
+            return false;
+        }
+        if(number.compareTo(new BigDecimal("0")) != 1
+                || number.compareTo(new BigDecimal("121")) == 1){
+            return false;
+        }
+        return true;
+    }
+    public static boolean isValidWeight(String weight){
+        BigDecimal number;
+        if(Objects.isNull(weight)){
+            return false;
+        }
+        try{
+            number = new BigDecimal(weight);
+        }catch (NumberFormatException e){
+            return false;
+        }
+        if(number.compareTo(new BigDecimal("0")) != 1){
+            return false;
+        }
+        if(number.compareTo(new BigDecimal("250")) == 1){
+            return false;
+        }
+        return true;
+    }
+    public static boolean isValidHeight(String height){
+        BigDecimal number;
+        if(Objects.isNull(height)){
+            return false;
+        }
+        try{
+            number = new BigDecimal(height);
+        }catch (NumberFormatException e){
+            return false;
+        }
+        if(number.compareTo(new BigDecimal("0")) != 1
+                || number.compareTo(new BigDecimal("230")) == 1){
+            return false;
+        }
+        return true;
+    }
     public static boolean isValidPositiveNumber(String numberStr){
         BigDecimal number;
         if(Objects.isNull(numberStr)){

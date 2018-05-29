@@ -1,10 +1,14 @@
 package ua.trackingFood.command;
 
+import org.apache.log4j.Logger;
+import ua.trackingFood.command.Command;
+import ua.trackingFood.command.FactoryCommand;
 import ua.trackingFood.entity.UserContact;
 import ua.trackingFood.entity.UserParam;
 import ua.trackingFood.exception.RegistrationException;
 import ua.trackingFood.service.LoginService;
 import ua.trackingFood.service.RegistrationService;
+import ua.trackingFood.service.ServiceFactory;
 import ua.trackingFood.validation.EnterDataValidator;
 
 import javax.servlet.ServletException;
@@ -13,7 +17,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Objects;
-import java.util.logging.Logger;
 
 import static ua.trackingFood.utils.resourceHolders.AttributesHolder.*;
 import static ua.trackingFood.utils.resourceHolders.AttributesHolder.GO_TO_GENERAL;
@@ -21,14 +24,15 @@ import static ua.trackingFood.utils.resourceHolders.PagesHolder.LOGIN_PAGE;
 import static ua.trackingFood.utils.resourceHolders.PagesHolder.REGISTRATION_PARAM_PAGE;
 
 public class RegistrationParamCommand implements Command {
-    private Logger logger = Logger.getLogger("RegistrationParamCommand.class");
-    private LoginService loginService = new LoginService();//check
-    private RegistrationService registrationService = new RegistrationService();//check
+    private static final Logger LOGGER = Logger.getLogger(RegistrationParamCommand.class);
+    private static final LoginService loginService = ServiceFactory.getServiceFactory().getLoginService();
+    private static final RegistrationService registrationService = ServiceFactory.getServiceFactory().getRegistrationService();
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String loginParam = request.getParameter(ATTR_LOGIN);
+        System.out.println(loginParam);
         String sex = request.getParameter(ATTR_SEX);
         String lifeStyle = request.getParameter(ATTR_LIFE_STYLE);
         String age = request.getParameter(ATTR_AGE);
@@ -61,9 +65,9 @@ public class RegistrationParamCommand implements Command {
                 new BigDecimal(height), new BigDecimal(weight), expectedResult);
         try {
             registrationService.registerStep2(userParam, userContact);
+            LOGGER.info("registration was successfully");
             if(check){
                 FactoryCommand.getInstance().getCommand(GO_TO_GENERAL).execute(request, response);
-                //request.getRequestDispatcher("/WEB-INF/jsp/general.jsp").forward(request,response);
             }else{
                 request.getRequestDispatcher(LOGIN_PAGE).forward(request,response);
             }
@@ -82,27 +86,27 @@ public class RegistrationParamCommand implements Command {
             return false;
         }
         if(!EnterDataValidator.isValidSex(sex)){
-            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"sex incorrect");
+            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"sex isn't correct");
             return false;
         }
         if(!EnterDataValidator.isValidLifeStyle(lifeStyle)){
-            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"life style incorrect");
+            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"life style isn't correct");
             return false;
         }
-        if(!EnterDataValidator.isValidNumber(age)){
-            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"age incorrect");
+        if(!EnterDataValidator.isValidAge(age)){
+            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"age isn't correct");
             return false;
         }
-        if(!EnterDataValidator.isValidNumber(height)){
-            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"height incorrect");
+        if(!EnterDataValidator.isValidHeight(height)){
+            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"height isn't correct");
             return false;
         }
-        if(!EnterDataValidator.isValidNumber(weight)){
-            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"weight incorrect");
+        if(!EnterDataValidator.isValidWeight(weight)){
+            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"weight isn't correct");
             return false;
         }
         if(!EnterDataValidator.isValidExpectedResult(expectedResult)){
-            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"expected result incorrect");
+            request.setAttribute(ATTR_ERROR_MESSAGE_PARAM,"expected result isn't correct");
             return false;
         }
         return true;

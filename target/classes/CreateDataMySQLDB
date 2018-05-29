@@ -1,5 +1,5 @@
-insert into users (userId, position, name, login, password, check_word, salary, number_mistake, experience) values(1, 'ew', 'Maрія', 'best', 'qwerty', 'valera', 1700, 0, 8);
-insert into users (userId, position, name, login, password, check_word, salary, number_mistake, experience) values(2, 'cashier', 'sasha', 'ALEX', 'life', 'кошеня', 1900, 0, 12);
+insert into users (id, name, surname, login, password, mail_address) values(1, "Maр'яна", "Підгірна", "best", "qwerty", "rtg@bk.ru");
+insert into users (id, name, surname, login, password, mail_address) values(2, "sasha", "Petrov", "ALEX", "life", "zzz@gmail.com");
 
 
 insert into products (id, code_product, name, countable, price_for_one) values(1, 1001, "банани", "0", 33.55);

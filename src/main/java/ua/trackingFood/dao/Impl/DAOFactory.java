@@ -1,6 +1,13 @@
 package ua.trackingFood.dao.Impl;
 
 import ua.trackingFood.dao.*;
+import ua.trackingFood.dao.Impl.DAOCategoryProductsImpl;
+import ua.trackingFood.dao.Impl.DAOEatenProductsImpl;
+import ua.trackingFood.dao.Impl.DAOLifeStyleImpl;
+import ua.trackingFood.dao.Impl.DAOProductImpl;
+import ua.trackingFood.dao.Impl.DAOUserParamImpl;
+import ua.trackingFood.dao.Impl.DAOUserResultImpl;
+import ua.trackingFood.dao.Impl.DAOUsersImpl;
 
 public class DAOFactory {
     private static DAOFactory daoFactory = new DAOFactory();

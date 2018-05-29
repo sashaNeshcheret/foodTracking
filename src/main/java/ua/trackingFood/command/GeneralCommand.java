@@ -1,9 +1,11 @@
 package ua.trackingFood.command;
 
-//import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
+import ua.trackingFood.command.Command;
 import ua.trackingFood.entity.*;
 import ua.trackingFood.service.GeneralService;
 import ua.trackingFood.service.LoginService;
+import ua.trackingFood.service.ServiceFactory;
 import ua.trackingFood.service.ShowEatenProductsService;
 import ua.trackingFood.validation.EnterDataValidator;
 
@@ -19,10 +21,10 @@ import static ua.trackingFood.utils.resourceHolders.AttributesHolder.ATTR_LOGIN;
 import static ua.trackingFood.utils.resourceHolders.PagesHolder.GENERAL_PAGE;
 
 public class GeneralCommand implements Command {
-    private LoginService loginService = new LoginService();
-    private GeneralService generalService = new GeneralService();
-    private ShowEatenProductsService showEatenProductsService = new ShowEatenProductsService();
-    //private Logger logger = Logger.getLogger(LoginCommand.class);
+    private static final LoginService loginService = ServiceFactory.getServiceFactory().getLoginService();
+    private static final GeneralService generalService = ServiceFactory.getServiceFactory().getGeneralService();
+    private static final ShowEatenProductsService showEatenProductsService = ServiceFactory.getServiceFactory().getShowEatenProductsService();
+    private static final Logger LOGGER = Logger.getLogger(GeneralCommand.class.getSimpleName());
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -30,7 +32,6 @@ public class GeneralCommand implements Command {
         String login = (String) session.getAttribute(ATTR_LOGIN);
         UserContact userContact = loginService.getUserByLogin(login);
         session.setAttribute("userId", userContact.getId());
-        //List<CategoryProducts> list = generalService.readCategories();
         UserResult userResult = generalService.readUserResultInfo(userContact.getId());
         UserParam userParam = generalService.readUserParamInfo(userContact.getId());
         List<EatenProducts> eatenProductsList = showEatenProductsService.getEatenProductList(userContact.getId());
@@ -41,7 +42,6 @@ public class GeneralCommand implements Command {
         request.setAttribute("userParam", userParam);
         request.setAttribute("eatenProduct", eatenProduct);
         request.setAttribute("availableBalance", availableBalance);
-        //request.setAttribute("list", list);
         request.getRequestDispatcher(GENERAL_PAGE).forward(request,response);
     }
 

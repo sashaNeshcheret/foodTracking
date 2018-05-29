@@ -1,24 +1,22 @@
 package ua.trackingFood.service;
 
+import org.apache.log4j.Logger;
 import ua.trackingFood.dao.DAOEatenProducts;
 import ua.trackingFood.dao.DAOProduct;
 import ua.trackingFood.dao.Impl.DAOFactory;
 import ua.trackingFood.entity.EatenProducts;
 import ua.trackingFood.entity.Product;
 import ua.trackingFood.exception.DAOException;
+import ua.trackingFood.service.GeneralService;
 
 import java.math.BigDecimal;
-import java.sql.Date;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class ShowEatenProductsService {
-    private DAOEatenProducts daoEatenProducts = DAOFactory.getDaoFactory().getDAOEatenProducts();
-    private DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
-    //private DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
-    private Logger logger = Logger.getLogger("AddEatenProductsService.class");
+    private static final DAOEatenProducts daoEatenProducts = DAOFactory.getDaoFactory().getDAOEatenProducts();
+    private static final DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
+    private static final Logger LOGGER = Logger.getLogger(GeneralService.class.getSimpleName());
 
 
     //по айди продукта берем значения параметров продуктов
@@ -28,12 +26,10 @@ public class ShowEatenProductsService {
 
     public List<EatenProducts> getEatenProductList(int userId){
         List<EatenProducts> list = new ArrayList<>();
-        LocalDate date = LocalDate.now();
-        Date dateSql = Date.valueOf(date);
         try {
-            list = daoEatenProducts.read(dateSql, userId);
+            list = daoEatenProducts.read(userId);
         } catch (DAOException e) {
-//
+            LOGGER.error("method createEatenProducts thrown DAOException", e);
         }
         return list;
     }
@@ -53,25 +49,13 @@ public class ShowEatenProductsService {
         }
         return eatenProducts;
     }
-    /**Read info about exists product's category
-     */
-    /*public List<CategoryProducts> readCategories() {
-        List<CategoryProducts> categoryProductsList = null;
-        try {
-            categoryProductsList = daoEatenProducts.read();
-        } catch (DAOException e) {
-//
-        }
-        return categoryProductsList;
-    }*/
-    /**Read info about exists product's category
-     */
+    
     public List<Product> getProductsList(int categoryId, int from, int size) {
         List<Product> productList = null;
         try {
             productList = daoProduct.read(categoryId, from, size);
         } catch (DAOException e) {
-//
+            LOGGER.error("method getProductsList thrown DAOException", e);
         }
         return productList;
     }
@@ -80,7 +64,7 @@ public class ShowEatenProductsService {
         try {
             product = daoProduct.readById(id);
         } catch (DAOException e) {
-//
+            LOGGER.error("method getProduct thrown DAOException", e);
         }
         return product;
     }

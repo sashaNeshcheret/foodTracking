@@ -2,6 +2,8 @@ package ua.trackingFood.transactions;
 
 import ua.trackingFood.exception.ConnectionException;
 import ua.trackingFood.exception.TransactionException;
+import ua.trackingFood.transactions.ConnectionPool;
+import ua.trackingFood.transactions.ConnectionWrapper;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -9,7 +11,7 @@ import java.util.Objects;
 
 public class TransactionManager {
     
-    private static final ThreadLocal<ConnectionWrapper> threadLocal = new ThreadLocal<>();
+    private static final ThreadLocal<ua.trackingFood.transactions.ConnectionWrapper> threadLocal = new ThreadLocal<>();
 
     private TransactionManager() {
     }
@@ -18,9 +20,9 @@ public class TransactionManager {
         if (Objects.nonNull(threadLocal.get()))
             throw new TransactionException();
         try {
-            Connection connection = ConnectionPool.getConnection();
+            Connection connection = ua.trackingFood.transactions.ConnectionPool.getConnection();
             connection.setAutoCommit(false);
-            ConnectionWrapper wrapper = new ConnectionWrapper(connection, true);
+            ua.trackingFood.transactions.ConnectionWrapper wrapper = new ua.trackingFood.transactions.ConnectionWrapper(connection, true);
             threadLocal.set(wrapper);
         } catch (SQLException e) {
             throw new ConnectionException();
@@ -31,7 +33,7 @@ public class TransactionManager {
         if (Objects.isNull(threadLocal.get()))
             throw new TransactionException();
         try {
-            ConnectionWrapper wrapper = threadLocal.get();
+            ua.trackingFood.transactions.ConnectionWrapper wrapper = threadLocal.get();
             Connection connection = wrapper.getConnection();
             connection.commit();
             connection.close();
@@ -44,14 +46,14 @@ public class TransactionManager {
     public static void rollBack() throws SQLException {
         if (Objects.isNull(threadLocal.get()))
             return; // already closed
-        ConnectionWrapper wrapper = threadLocal.get();
+        ua.trackingFood.transactions.ConnectionWrapper wrapper = threadLocal.get();
         Connection connection = wrapper.getConnection();
         connection.rollback();
         connection.close();
         threadLocal.set(null);
     }
 
-    public static ConnectionWrapper getConnection() throws ConnectionException {
+    public static ua.trackingFood.transactions.ConnectionWrapper getConnection() throws ConnectionException {
         if (Objects.isNull(threadLocal.get())) {
             Connection connection = ConnectionPool.getConnection();
             return new ConnectionWrapper(connection, false);

@@ -1,5 +1,6 @@
 package ua.trackingFood.service;
 
+import org.apache.log4j.Logger;
 import ua.trackingFood.dao.*;
 import ua.trackingFood.dao.Impl.DAOFactory;
 import ua.trackingFood.entity.*;
@@ -8,16 +9,15 @@ import ua.trackingFood.exception.DAOException;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Objects;
-import java.util.logging.Logger;
 
 import static ua.trackingFood.utils.resourceHolders.AttributesHolder.*;
 
 public class GeneralService {
-    private DAOCategoryProducts daoCategoryProducts = DAOFactory.getDaoFactory().getDAOCategoryProducts();
-    private DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
-    private DAOUserResult daoUserResult = DAOFactory.getDaoFactory().getDAOUserResult();
-    private DAOUserParam daoUserParam = DAOFactory.getDaoFactory().getDAOUserParam();
-    private Logger logger = Logger.getLogger("GeneralService.class");
+    private static final Logger LOGGER = Logger.getLogger(GeneralService.class.getSimpleName());
+    private static final DAOCategoryProducts daoCategoryProducts = DAOFactory.getDaoFactory().getDAOCategoryProducts();
+    private static final DAOProduct daoProduct = DAOFactory.getDaoFactory().getDAOProduct();
+    private static final DAOUserResult daoUserResult = DAOFactory.getDaoFactory().getDAOUserResult();
+    private static final DAOUserParam daoUserParam = DAOFactory.getDaoFactory().getDAOUserParam();
 
 
     /**Read info about exists product's category
@@ -27,7 +27,7 @@ public class GeneralService {
         try {
             categoryProductsList = daoCategoryProducts.read();
         } catch (DAOException e) {
-
+            LOGGER.error("method readCategories thrown DAOException", e);
         }
         return categoryProductsList;
     }
@@ -38,7 +38,7 @@ public class GeneralService {
         try {
             categoryProducts = daoCategoryProducts.read(categoryId);
         } catch (DAOException e) {
-
+            LOGGER.error("method readCategory thrown DAOException", e);
         }
         return categoryProducts;
     }
@@ -49,7 +49,7 @@ public class GeneralService {
         try {
             productList = daoProduct.read(categoryId, from, size);
         } catch (DAOException e) {
-
+            LOGGER.error("method readCategory thrown DAOException", e);
         }
         return productList;
     }
@@ -59,7 +59,7 @@ public class GeneralService {
         try {
             userResult = daoUserResult.read(userId);
         } catch (DAOException e) {
-
+            LOGGER.error("method readUserResultInfo thrown DAOException", e);
         }
         return userResult;
     }
@@ -68,7 +68,7 @@ public class GeneralService {
         try {
             userParam = daoUserParam.read(userId);
         } catch (DAOException e) {
-
+            LOGGER.error("method readUserParamInfo thrown DAOException", e);
         }
         return userParam;
     }
@@ -132,10 +132,11 @@ public class GeneralService {
             --category;
         }
         else if(Objects.equals(ATTR_NEXT, nameSubmit2)) {
-//SELECT COUNT(*) FROM tracking_food.eaten_products;
             int numberCategories = daoCategoryProducts.count();
-            if (!(category == numberCategories)) {
+            if (!(category == numberCategories-1)) {
                 ++category;
+            }else{
+                category = -1;
             }
         }
         return category;
@@ -145,11 +146,7 @@ public class GeneralService {
             --from;
         }
         else if(Objects.equals(ATTR_NEXT_PROD, nameSubmit4)){
-            from++;
-            int pages = daoProduct.count();
-            if(!(pages==from)){
-                ++from;
-            }
+            ++from;
         }
         return from;
     }

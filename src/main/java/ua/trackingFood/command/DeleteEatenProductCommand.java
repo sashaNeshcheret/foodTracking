@@ -1,12 +1,11 @@
 package ua.trackingFood.command;
 
+import ua.trackingFood.command.AddNewCategoryCommand;
+import ua.trackingFood.command.Command;
 import ua.trackingFood.entity.CategoryProducts;
 import ua.trackingFood.entity.EatenProducts;
 import ua.trackingFood.entity.UserContact;
-import ua.trackingFood.service.AddEatenProductsService;
-import ua.trackingFood.service.GeneralService;
-import ua.trackingFood.service.LoginService;
-import ua.trackingFood.service.ShowEatenProductsService;
+import ua.trackingFood.service.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -22,11 +21,11 @@ import static ua.trackingFood.utils.resourceHolders.AttributesHolder.LOGIN;
 import static ua.trackingFood.utils.resourceHolders.PagesHolder.PERSONAL_LIST_PAGE;
 
 public class DeleteEatenProductCommand implements Command {
-    private Logger logger = Logger.getLogger("GoToChangeParamCommand.class");
-    private GeneralService generalService = new GeneralService();
-    private LoginService loginService = new LoginService();
-    private ShowEatenProductsService showEatenProductsService = new ShowEatenProductsService();
-    private AddEatenProductsService addEatenProductsService = new AddEatenProductsService();
+    private static final org.apache.log4j.Logger LOGGER = org.apache.log4j.Logger.getLogger(AddNewCategoryCommand.class.getSimpleName());
+    private static final GeneralService generalService = ServiceFactory.getServiceFactory().getGeneralService();
+    private static final LoginService loginService = ServiceFactory.getServiceFactory().getLoginService();
+    private static final ShowEatenProductsService showEatenProductsService = ServiceFactory.getServiceFactory().getShowEatenProductsService();
+    private static final AddEatenProductsService addEatenProductsService = ServiceFactory.getServiceFactory().getAddEatenProductsService();
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -40,10 +39,9 @@ public class DeleteEatenProductCommand implements Command {
             id = Integer.parseInt(product);
             categoryId = Integer.parseInt(category);
         }catch (NumberFormatException e){
-            logger.warning("id продукту для видалення неправильний");
+            LOGGER.error( "id of product to be deleted is not correct" );
         }
         UserContact userContact = loginService.getUserByLogin(login);
-        //UserParam userParam = generalService.readUserParamInfo(userContact.getId());
         addEatenProductsService.deleteProduct(id);
         List<EatenProducts> eatenProductsList = showEatenProductsService.getEatenProductList(userContact.getId());
         List<CategoryProducts> categoryList = generalService.readCategories();
@@ -54,7 +52,6 @@ public class DeleteEatenProductCommand implements Command {
         request.setAttribute("eatenProductsList", eatenProductsList);
         request.setAttribute("list", categoryList);
         request.setAttribute("userContact", userContact);
-        //request.setAttribute("userParam", userParam);
         request.getRequestDispatcher(PERSONAL_LIST_PAGE).forward(request, response);
     }
 }
